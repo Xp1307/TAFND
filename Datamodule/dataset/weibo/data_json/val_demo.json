@@ -1,0 +1,38 @@
+[
+  {
+    "yyHpl5z7q": {
+      "tweet_id": "yyHpl5z7q",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/0_Datasets/2022_MFAN_PHEME_Weibo/dataset/weibo/weibo_images/images_all/4244.jpg",
+      "tweet_content": " 他被认为是香港流行音乐新时代的指标人物之一亦被认为是香港流行音乐泰山级人物张学友的接班人,著名实力派粤语流行音乐歌手 演员，曾被美国《时代杂志》形容为影响香港乐坛风格的人物，同时也是继许冠杰、张学友之后第三个获得“歌神”称号的香港男歌手。陈奕迅！！被他的歌感动过的爱他转发吧！！ ",
+      "tweet_label": 0,
+      "img_id": "4244"
+    }
+  },
+  {
+    "yuhafflpv": {
+      "tweet_id": "yuhafflpv",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/0_Datasets/2022_MFAN_PHEME_Weibo/dataset/weibo/weibo_images/images_all/5063.jpg",
+      "tweet_content": "【朝鲜人民怒了！ 国旗事件导播被劝退】http://t.cn/zWog6t7 据《每日电讯报》报道，就上错国旗一事，国际奥委会朝鲜委员接受采访表示：朝鲜人民当然愤怒了！事件发生后，上错国旗的导播被奥组委劝退，不过也有朝鲜半岛问题专家表示，“如没罢赛抗议，那她们回国可能会被带到一个不太好的地方。”",
+      "tweet_label": 0,
+      "img_id": "5063"
+    }
+  },
+  {
+    "z1bnvvb13": {
+      "tweet_id": "z1bnvvb13",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/0_Datasets/2022_MFAN_PHEME_Weibo/dataset/weibo/weibo_images/images_all/4020.jpg",
+      "tweet_content": "【港币对人民币首破80 赴港“打酱油”将越来越划算】近日，每100港元对人民币在内地银行的报价应声跌破80元大关。内地银行人民币现钞兑换价在79水平。港元持续贬值，内地居民赴港消费，也从以往购买奢侈品转移到普通生活用品，预计内地赴港“打酱油”的人会越来越多。（南方都市报）",
+      "tweet_label": 0,
+      "img_id": "4020"
+    }
+  },
+  {
+    "zlLpC9KEq": {
+      "tweet_id": "zlLpC9KEq",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/0_Datasets/2022_MFAN_PHEME_Weibo/dataset/weibo/weibo_images/images_all/4079.jpg",
+      "tweet_content": "欲讯秋情众莫知,喃喃负手叩东篱。 孤标傲世偕谁隐,一样花开为底迟? 圃露庭霜何寂寞,鸿归蛩病可相思? 休言举世无谈者,解语何妨片语时。",
+      "tweet_label": 0,
+      "img_id": "4079"
+    }
+  }
+]

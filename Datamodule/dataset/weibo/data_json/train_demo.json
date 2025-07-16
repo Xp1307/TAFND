@@ -1,0 +1,38 @@
+[
+  {
+    "A5nqsedz2": {
+      "tweet_id": "A5nqsedz2",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/0_Datasets/2022_MFAN_PHEME_Weibo/dataset/weibo/weibo_images/images_all/2140.jpg",
+      "tweet_content": "SONY都会破产？这...这...这！[抓狂] 我在:http://t.cn/zQrPQFO",
+      "tweet_label": 1,
+      "img_id": "2140"
+    }
+  },
+  {
+    "iXmyQf": {
+      "tweet_id": "iXmyQf",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/0_Datasets/2022_MFAN_PHEME_Weibo/dataset/weibo/weibo_images/images_all/2949.jpg",
+      "tweet_content": "人生就是一个不停放弃的过程。放弃童年的无忧，成全长大的期望；放弃青春的美丽，换取成熟的智慧；放弃爱情的甜蜜，换取家庭的安稳；放弃掌声的动听，换取心灵的平静。——接受与否，有时我们并无选择。爱因为不能拥有而深刻，梦因为不能圆而美丽。人生，总是带着残缺的美，因缺憾而凄美。",
+      "tweet_label": 0,
+      "img_id": "2949"
+    }
+  },
+  {
+    "zeaMs1O8W": {
+      "tweet_id": "zeaMs1O8W",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/0_Datasets/2022_MFAN_PHEME_Weibo/dataset/weibo/weibo_images/images_all/397.jpg",
+      "tweet_content": "【帝都是怎么了？[震惊]】@米娜33：今儿北京毒气爆表，晚上10点我家水龙头放出来的水成这样儿了，一盆毒死你！奉劝大家这两天儿大家还是把自来水儿给戒了吧！！！！[围观]",
+      "tweet_label": 1,
+      "img_id": "397"
+    }
+  },
+  {
+    "Asb0Ue2Yh": {
+      "tweet_id": "Asb0Ue2Yh",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/0_Datasets/2022_MFAN_PHEME_Weibo/dataset/weibo/weibo_images/images_all/3161.jpg",
+      "tweet_content": "#截图有真相#此前，@李剑芒A045 @老榕 为了袒护@赵士林89 ，在网友投票时出动了所谓的『铁骑军』（图1、图2）。今天，李剑芒再次提及铁骑军（图3），那么他所谓的铁骑军到底是什么样的？情况截图（图4～图9）。请@微博管理员 @微博小秘书 @微博辟谣 关注这些『投票专业户』，严厉打击网络黑社会。",
+      "tweet_label": 0,
+      "img_id": "3161"
+    }
+  }
+]
