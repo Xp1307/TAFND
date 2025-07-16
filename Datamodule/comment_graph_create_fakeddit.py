@@ -4,8 +4,7 @@ import json
 import torch
 from tqdm import tqdm
 from transformers import AutoModel, AutoTokenizer
-from torch_geometric.data import HeteroData, DataLoader
-from torch_geometric.nn import HGTConv
+from torch_geometric.data import HeteroData
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 

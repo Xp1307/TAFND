@@ -3,13 +3,12 @@ import csv
 import torch
 from tqdm import tqdm
 from transformers import AutoModel, AutoTokenizer
-from torch_geometric.data import HeteroData, DataLoader
-from torch_geometric.nn import HGTConv
+from torch_geometric.data import HeteroData
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 def load_model(text_pretrained_model_name):
-    pretrained_models_dir = '/data3/xupin/1_FakeNewsOnLLM/UNnamePro/PretrainedModels/'
+    pretrained_models_dir = 'PretrainedModels/'
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     text_pretrained_model = AutoModel.from_pretrained(pretrained_models_dir + text_pretrained_model_name).to(device)
