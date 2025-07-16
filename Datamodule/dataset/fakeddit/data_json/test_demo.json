@@ -1,0 +1,58 @@
+[
+  {
+    "cgrel3": {
+      "tweet_id": "cgrel3",
+      "clean_title": "this palm tree kind of looks like a pineapple",
+      "subreddit": "mildlyinteresting",
+      "raw_title": "This palm tree kind of looks like a pineapple",
+      "num_comments": "24.0",
+      "two_way_label": "0",
+      "created_utc": "2019-07-23 11:29:30",
+      "tweet_content": "This palm tree kind of looks like a pineapple",
+      "tweet_image_local": "DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/cgrel3.jpg",
+      "tweet_label": 0
+    }
+  },
+  {
+    "cmrgrh": {
+      "tweet_id": "cmrgrh",
+      "clean_title": "my neighbors driveway is lined with dog statues",
+      "subreddit": "mildlyinteresting",
+      "raw_title": "My neighbors driveway is lined with dog statues.",
+      "num_comments": "43.0",
+      "two_way_label": "0",
+      "created_utc": "2019-08-06 14:43:47",
+      "tweet_content": "My neighbors driveway is lined with dog statues.",
+      "tweet_image_local": "DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/cmrgrh.jpg",
+      "tweet_label": 0
+    }
+  },
+  {
+    "bng07p": {
+      "tweet_id": "bng07p",
+      "clean_title": "white house contemplates sending migrant children to guantanamo bay",
+      "subreddit": "nottheonion",
+      "raw_title": "White House Contemplates Sending Migrant Children to Guantanamo Bay",
+      "num_comments": "23.0",
+      "two_way_label": "0",
+      "created_utc": "2019-05-11 19:33:18",
+      "tweet_content": "White House Contemplates Sending Migrant Children to Guantanamo Bay",
+      "tweet_image_local": "DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/bng07p.jpg",
+      "tweet_label": 0
+    }
+  },
+  {
+    "d7rkx4": {
+      "tweet_id": "d7rkx4",
+      "clean_title": "i froze a water bottle and peeled off the plastic",
+      "subreddit": "mildlyinteresting",
+      "raw_title": "I froze a water bottle and peeled off the plastic",
+      "num_comments": "14.0",
+      "two_way_label": "0",
+      "created_utc": "2019-09-22 15:03:01",
+      "tweet_content": "I froze a water bottle and peeled off the plastic",
+      "tweet_image_local": "DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/d7rkx4.jpg",
+      "tweet_label": 0
+    }
+  }
+]

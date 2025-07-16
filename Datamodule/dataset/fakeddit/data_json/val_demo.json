@@ -1,0 +1,58 @@
+[
+  {
+    "1q2tjn": {
+      "tweet_id": "1q2tjn",
+      "clean_title": "a bird keeping its chicks warm",
+      "subreddit": "photoshopbattles",
+      "raw_title": "A bird keeping its chicks warm (x/post from awww)",
+      "num_comments": "149.0",
+      "two_way_label": "0",
+      "created_utc": "2013-11-07 04:00:17",
+      "tweet_content": "A bird keeping its chicks warm (x/post from awww)",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/UNnamePro/DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/1q2tjn.jpg",
+      "tweet_label": 0
+    }
+  },
+  {
+    "8cctq0": {
+      "tweet_id": "8cctq0",
+      "clean_title": "eminem has a moms spaghetti popup restaurant at coachella",
+      "subreddit": "nottheonion",
+      "raw_title": "Eminem has a Mom's Spaghetti pop-up restaurant at Coachella",
+      "num_comments": "26.0",
+      "two_way_label": "0",
+      "created_utc": "2018-04-15 03:55:13",
+      "tweet_content": "Eminem has a Mom's Spaghetti pop-up restaurant at Coachella",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/UNnamePro/DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/8cctq0.jpg",
+      "tweet_label": 0
+    }
+  },
+  {
+    "1gutdb": {
+      "tweet_id": "1gutdb",
+      "clean_title": "a baby alligator loving a scratch from raww",
+      "subreddit": "photoshopbattles",
+      "raw_title": "A baby alligator loving a scratch. (from r/aww)",
+      "num_comments": "70.0",
+      "two_way_label": "0",
+      "created_utc": "2013-06-22 14:05:23",
+      "tweet_content": "A baby alligator loving a scratch. (from r/aww)",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/UNnamePro/DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/1gutdb.jpg",
+      "tweet_label": 0
+    }
+  },
+  {
+    "50yh4x": {
+      "tweet_id": "50yh4x",
+      "clean_title": "dog found alive after being trapped in rubble from the italian earthquake for days",
+      "subreddit": "upliftingnews",
+      "raw_title": "Dog found alive, after being trapped in rubble from the Italian earthquake for 9 days.",
+      "num_comments": "315.0",
+      "two_way_label": "0",
+      "created_utc": "2016-09-03 11:43:42",
+      "tweet_content": "Dog found alive, after being trapped in rubble from the Italian earthquake for 9 days.",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/UNnamePro/DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/50yh4x.jpg",
+      "tweet_label": 0
+    }
+  }
+]

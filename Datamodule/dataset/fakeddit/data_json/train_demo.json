@@ -1,0 +1,58 @@
+[
+  {
+    "8oj3wv": {
+      "tweet_id": "8oj3wv",
+      "clean_title": "this cat in a bucket",
+      "subreddit": "photoshopbattles",
+      "raw_title": "PsBattle: This cat in a bucket",
+      "num_comments": "290.0",
+      "two_way_label": "0",
+      "created_utc": "2018-06-04 17:25:10",
+      "tweet_content": "PsBattle: This cat in a bucket",
+      "tweet_image_local": "DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/8oj3wv.jpg",
+      "tweet_label": 0
+    }
+  },
+  {
+    "9by0q8": {
+      "tweet_id": "9by0q8",
+      "clean_title": "uncle sam i carved feet tall eastern pine",
+      "subreddit": "mildlyinteresting",
+      "raw_title": "Uncle Sam I carved. 8 feet tall. Eastern Pine",
+      "num_comments": "25.0",
+      "two_way_label": "0",
+      "created_utc": "2018-08-31 22:23:37",
+      "tweet_content": "Uncle Sam I carved. 8 feet tall. Eastern Pine",
+      "tweet_image_local": "DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/9by0q8.jpg",
+      "tweet_label": 0
+    }
+  },
+  {
+    "brdrrt": {
+      "tweet_id": "brdrrt",
+      "clean_title": "mexicans buy fake cellphones to hand over in muggings",
+      "subreddit": "nottheonion",
+      "raw_title": "Mexicans buy fake cellphones to hand over in muggings",
+      "num_comments": "23.0",
+      "two_way_label": "0",
+      "created_utc": "2019-05-21 18:10:49",
+      "tweet_content": "Mexicans buy fake cellphones to hand over in muggings",
+      "tweet_image_local": "DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/brdrrt.jpg",
+      "tweet_label": 0
+    }
+  },
+  {
+    "2lbszp": {
+      "tweet_id": "2lbszp",
+      "clean_title": "americans are working so hard its actually killing people",
+      "subreddit": "nottheonion",
+      "raw_title": "Americans Are Working So Hard It’s Actually Killing People",
+      "num_comments": "11.0",
+      "two_way_label": "0",
+      "created_utc": "2014-11-05 02:34:12",
+      "tweet_content": "Americans Are Working So Hard It’s Actually Killing People",
+      "tweet_image_local": "DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/2lbszp.jpg",
+      "tweet_label": 0
+    }
+  }
+]

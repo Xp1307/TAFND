@@ -1,0 +1,78 @@
+[
+  {
+    "8oj3wv": {
+      "tweet_id": "8oj3wv",
+      "author_name": "lawnscissors",
+      "clean_title": "this cat in a bucket",
+      "subreddit": "photoshopbattles",
+      "raw_title": "PsBattle: This cat in a bucket",
+      "num_comments": "290.0",
+      "two_way_label": "0",
+      "three_way_label": "0",
+      "six_way_label": "0",
+      "tweet_url": "https://www.reddit.com/r/i.redd.it/comments/8oj3wv",
+      "image_url": "https://preview.redd.it/cxfyyohoq0211.jpg?width=320&crop=smart&auto=webp&s=d65b1039fb4475c91cafa9458619a6e4347dcc78",
+      "created_utc": "2018-06-04 17:25:10",
+      "tweet_content": "PsBattle: This cat in a bucket",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/UNnamePro/DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/8oj3wv.jpg",
+      "tweet_label": 0
+    }
+  },
+  {
+    "9by0q8": {
+      "tweet_id": "9by0q8",
+      "author_name": "BerkshireMtnSculptor",
+      "clean_title": "uncle sam i carved feet tall eastern pine",
+      "subreddit": "mildlyinteresting",
+      "raw_title": "Uncle Sam I carved. 8 feet tall. Eastern Pine",
+      "num_comments": "25.0",
+      "two_way_label": "0",
+      "three_way_label": "0",
+      "six_way_label": "0",
+      "tweet_url": "https://www.reddit.com/r/i.redd.it/comments/9by0q8",
+      "image_url": "https://preview.redd.it/1t1rghy88ij11.jpg?width=320&crop=smart&auto=webp&s=aaa2fabbbd14168adb628dad98f672be0f458450",
+      "created_utc": "2018-08-31 22:23:37",
+      "tweet_content": "Uncle Sam I carved. 8 feet tall. Eastern Pine",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/UNnamePro/DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/9by0q8.jpg",
+      "tweet_label": 0
+    }
+  },
+  {
+    "brdrrt": {
+      "tweet_id": "brdrrt",
+      "author_name": "readerseven",
+      "clean_title": "mexicans buy fake cellphones to hand over in muggings",
+      "subreddit": "nottheonion",
+      "raw_title": "Mexicans buy fake cellphones to hand over in muggings",
+      "num_comments": "23.0",
+      "two_way_label": "0",
+      "three_way_label": "0",
+      "six_way_label": "0",
+      "tweet_url": "https://www.reddit.com/r/apnews.com/comments/brdrrt",
+      "image_url": "https://external-preview.redd.it/-FqYuNP8K3UPL2WYEuTQFyP2XqWBBOo4qAvCd_3CM3I.jpg?width=320&crop=smart&auto=webp&s=5d5328cc1b8171aa7a5647f710271fbcf8742078",
+      "created_utc": "2019-05-21 18:10:49",
+      "tweet_content": "Mexicans buy fake cellphones to hand over in muggings",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/UNnamePro/DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/brdrrt.jpg",
+      "tweet_label": 0
+    }
+  },
+  {
+    "2lbszp": {
+      "tweet_id": "2lbszp",
+      "author_name": "overgrown",
+      "clean_title": "americans are working so hard its actually killing people",
+      "subreddit": "nottheonion",
+      "raw_title": "Americans Are Working So Hard It’s Actually Killing People",
+      "num_comments": "11.0",
+      "two_way_label": "0",
+      "three_way_label": "0",
+      "six_way_label": "0",
+      "tweet_url": "https://www.reddit.com/r/thenation.com/comments/2lbszp",
+      "image_url": "https://external-preview.redd.it/q1YgmFleWGgVN9iKRMuGhXj8EGRZ8SD0CXWnc-YE84A.jpg?width=320&crop=smart&auto=webp&s=9205b3c94548b2768405613e4cd106c6aa2d0f07",
+      "created_utc": "2014-11-05 02:34:12",
+      "tweet_content": "Americans Are Working So Hard It’s Actually Killing People",
+      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/UNnamePro/DataModule/dataset/fakeddit/fakeddit_iamges/imges_all/2lbszp.jpg",
+      "tweet_label": 0
+    }
+  }
+]
