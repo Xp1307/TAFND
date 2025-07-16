@@ -2,36 +2,40 @@
   {
     "AwqYakTJT": {
       "tweet_id": "AwqYakTJT",
-      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/0_Datasets/2022_MFAN_PHEME_Weibo/dataset/weibo/weibo_images/images_all/3280.jpg",
+      "tweet_image_local": "DataModule/dataset/weibo/weibo_iamges/imges_all/3280.jpg",
       "tweet_content": "【爷孙恋词人与小40岁女友顺利恋爱1周年】昨天，台湾资深作词人李坤城受邀，分享历年来的客家音乐收藏，不过发布会焦点依然是其爷孙恋。小他40岁的17岁小女友林靖恩静静依偎在旁。李坤城表示，2月15日两人恰好交往满周年，将提前在情人节庆祝，两人说“我们每天都是情人节啦。” http://t.cn/8FNeCjR",
       "tweet_label": 0,
+      "time":1392220508,
       "img_id": "3280"
     }
   },
   {
     "A1gnYd9VU": {
       "tweet_id": "A1gnYd9VU",
-      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/0_Datasets/2022_MFAN_PHEME_Weibo/dataset/weibo/weibo_images/images_all/3835.jpg",
+      "tweet_image_local": "DataModule/dataset/weibo/weibo_iamges/imges_all/3835.jpg",
       "tweet_content": "#卫士说晚安#百年后，我们都已不在。那个时候就会明白，今生所有的遇到都是命运给我们最好的礼物。感恩生命的存在，豁达明了的生活给了我们期待。待到花开的瞬间，岁月仍记得，你来过，得到过，拥有过，珍惜过。——晚安，各位！~[心] ",
       "tweet_label": 0,
+      "time":1374508746,
       "img_id": "3835"
     }
   },
   {
     "z0zDrypuX": {
       "tweet_id": "z0zDrypuX",
-      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/0_Datasets/2022_MFAN_PHEME_Weibo/dataset/weibo/weibo_images/images_all/1745.jpg",
+      "tweet_image_local": "DataModule/dataset/weibo/weibo_iamges/imges_all/1745.jpg",
       "tweet_content": "【交通新规】2013年1月1日施行:1闯红灯，记6分，罚100元。2酒驾，5年内不得再考取驾照。3不系安全带，记3分，罚100元。4副驾不系安全带，记1分，罚50元。5行驶中拨打手机，记3分，罚100元。6行驶中抽烟，记1分，罚100元。7有意遮挡号牌，记12分，顶额处罚。8超速驾驶，记6分。扩散给大家!「广州日报」",
       "tweet_label": 1,
+      "time":1350275090,
       "img_id": "1745"
     }
   },
   {
     "yyxtp8Jmj": {
       "tweet_id": "yyxtp8Jmj",
-      "tweet_image_local": "/data3/xupin/1_FakeNewsOnLLM/0_Datasets/2022_MFAN_PHEME_Weibo/dataset/weibo/weibo_images/images_all/4989.jpg",
+      "tweet_image_local": "DataModule/dataset/weibo/weibo_iamges/imges_all/4989.jpg",
       "tweet_content": "【刹那、弹指或瞬间到底是多长时间】《僧祇律》记载：1剎那者为1念，20念为1瞬，20瞬为1弹指，20弹指为1罗预，20罗预为1须臾，1日1夜有30须臾。换算结果：须臾＝48分钟，弹指＝7.2秒，瞬间＝0.36秒，剎那＝1念＝0.018秒。须臾>弹指>瞬间>刹那=1念。by@微博图书",
       "tweet_label": 0,
+      "time":1345732837,
       "img_id": "4989"
     }
   }
