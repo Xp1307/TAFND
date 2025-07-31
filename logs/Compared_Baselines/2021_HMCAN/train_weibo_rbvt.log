@@ -1,0 +1,438 @@
+nohup: ignoring input
+alpha:  0.5
+batch_size:  32
+True
+========================================================================================================================================================================================================
+Run time:  1
+epoch=0	total_loss=19.6120927631855	max_acc=0.7423728813559322	acc=0.7423728813559322	precision=0.9166666666666666
+epoch=1	total_loss=8.793611351400614	max_acc=0.7762711864406779	acc=0.7762711864406779	precision=0.6506024096385542
+epoch=2	total_loss=4.736614608904347	max_acc=0.8101694915254237	acc=0.8101694915254237	precision=0.875
+epoch=3	total_loss=5.180748615413904	max_acc=0.8101694915254237	acc=0.4033898305084746	precision=0.875
+epoch=4	total_loss=2.2162613754626364	max_acc=0.8677966101694915	acc=0.8677966101694915	precision=0.8407079646017699
+epoch=5	total_loss=1.1706600087927654	max_acc=0.8677966101694915	acc=0.6338983050847458	precision=0.8407079646017699
+epoch=6	total_loss=1.1885292071092408	max_acc=0.8677966101694915	acc=0.7830508474576271	precision=0.8407079646017699
+epoch=7	total_loss=0.777727291744668	max_acc=0.8677966101694915	acc=0.7152542372881356	precision=0.8407079646017699
+epoch=8	total_loss=1.8719513844989706	max_acc=0.8677966101694915	acc=0.8542372881355932	precision=0.8407079646017699
+epoch=9	total_loss=1.7289692926424323	max_acc=0.8677966101694915	acc=0.7661016949152543	precision=0.8407079646017699
+epoch=10	total_loss=7.889445913489908	max_acc=0.8677966101694915	acc=0.8271186440677966	precision=0.8407079646017699
+epoch=11	total_loss=4.927308436483145	max_acc=0.8677966101694915	acc=0.8203389830508474	precision=0.8407079646017699
+epoch=12	total_loss=1.4803496706299484	max_acc=0.8677966101694915	acc=0.8440677966101695	precision=0.8407079646017699
+epoch=13	total_loss=0.30959094304125756	max_acc=0.8677966101694915	acc=0.8576271186440678	precision=0.8407079646017699
+epoch=14	total_loss=3.192854867607821	max_acc=0.8677966101694915	acc=0.6203389830508474	precision=0.8407079646017699
+Early stopping at epoch 14
+Best Test Accuracy: 0.8678
+Best Fake Precision: 0.8407
+Best Fake Recall: 0.8190
+Best Faek F1: 0.8297
+Best Real Precision: 0.8846
+Best Real Recall: 0.8994
+Best Real F1: 0.8920
+========================================================================================================================================================================================================
+Run time:  2
+epoch=0	total_loss=16.459353774785995	max_acc=0.8271186440677966	acc=0.8271186440677966	precision=0.7018633540372671
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=1	total_loss=10.236073225736618	max_acc=0.8271186440677966	acc=0.6067796610169491	precision=0.7018633540372671
+epoch=2	total_loss=7.2974093882367015	max_acc=0.8271186440677966	acc=0.823728813559322	precision=0.7018633540372671
+epoch=3	total_loss=6.4954139441251755	max_acc=0.8271186440677966	acc=0.6745762711864407	precision=0.7018633540372671
+epoch=4	total_loss=3.68113992549479	max_acc=0.8542372881355932	acc=0.8542372881355932	precision=0.7874015748031497
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=5	total_loss=2.809685180429369	max_acc=0.8542372881355932	acc=0.39322033898305087	precision=0.7874015748031497
+epoch=6	total_loss=8.406060455366969	max_acc=0.8542372881355932	acc=0.5457627118644067	precision=0.7874015748031497
+epoch=7	total_loss=4.501528135500848	max_acc=0.8542372881355932	acc=0.7898305084745763	precision=0.7874015748031497
+epoch=8	total_loss=4.506490486674011	max_acc=0.8542372881355932	acc=0.6101694915254238	precision=0.7874015748031497
+epoch=9	total_loss=10.832912895828485	max_acc=0.8542372881355932	acc=0.39661016949152544	precision=0.7874015748031497
+epoch=10	total_loss=4.033616974018514	max_acc=0.8711864406779661	acc=0.8711864406779661	precision=0.8545454545454545
+epoch=11	total_loss=2.1571204795036465	max_acc=0.8711864406779661	acc=0.864406779661017	precision=0.8545454545454545
+epoch=12	total_loss=1.122979478444904	max_acc=0.8711864406779661	acc=0.8305084745762712	precision=0.8545454545454545
+epoch=13	total_loss=3.478648967342451	max_acc=0.8711864406779661	acc=0.7762711864406779	precision=0.8545454545454545
+epoch=14	total_loss=3.593045048415661	max_acc=0.8711864406779661	acc=0.6644067796610169	precision=0.8545454545454545
+epoch=15	total_loss=2.3363497531972826	max_acc=0.8711864406779661	acc=0.847457627118644	precision=0.8545454545454545
+epoch=16	total_loss=2.296874545281753	max_acc=0.8711864406779661	acc=0.7830508474576271	precision=0.8545454545454545
+epoch=17	total_loss=2.7337542814202607	max_acc=0.8711864406779661	acc=0.7593220338983051	precision=0.8545454545454545
+epoch=18	total_loss=6.005071850027889	max_acc=0.8711864406779661	acc=0.688135593220339	precision=0.8545454545454545
+epoch=19	total_loss=1.9091981665696949	max_acc=0.8711864406779661	acc=0.7186440677966102	precision=0.8545454545454545
+epoch=20	total_loss=1.1462081572972238	max_acc=0.8711864406779661	acc=0.8610169491525423	precision=0.8545454545454545
+Early stopping at epoch 20
+Best Test Accuracy: 0.8712
+Best Fake Precision: 0.8545
+Best Fake Recall: 0.8103
+Best Faek F1: 0.8319
+Best Real Precision: 0.8811
+Best Real Recall: 0.9106
+Best Real F1: 0.8956
+========================================================================================================================================================================================================
+Run time:  3
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=0	total_loss=17.657197058200836	max_acc=0.6067796610169491	acc=0.6067796610169491	precision=0.0
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=1	total_loss=8.515957027673721	max_acc=0.6067796610169491	acc=0.6067796610169491	precision=0.0
+epoch=2	total_loss=4.97347055003047	max_acc=0.8406779661016949	acc=0.8406779661016949	precision=0.8285714285714286
+epoch=3	total_loss=8.643786280415952	max_acc=0.8406779661016949	acc=0.823728813559322	precision=0.8285714285714286
+epoch=4	total_loss=5.619362466037273	max_acc=0.8406779661016949	acc=0.8203389830508474	precision=0.8285714285714286
+epoch=5	total_loss=10.771864991635084	max_acc=0.8406779661016949	acc=0.488135593220339	precision=0.8285714285714286
+epoch=6	total_loss=9.46479955688119	max_acc=0.8406779661016949	acc=0.39661016949152544	precision=0.8285714285714286
+epoch=7	total_loss=4.867413264233619	max_acc=0.8406779661016949	acc=0.7322033898305085	precision=0.8285714285714286
+epoch=8	total_loss=2.8511296990327537	max_acc=0.8406779661016949	acc=0.8271186440677966	precision=0.8285714285714286
+epoch=9	total_loss=4.598474365659058	max_acc=0.8406779661016949	acc=0.8135593220338984	precision=0.8285714285714286
+epoch=10	total_loss=4.974203998688608	max_acc=0.8406779661016949	acc=0.6101694915254238	precision=0.8285714285714286
+epoch=11	total_loss=4.160957199521363	max_acc=0.847457627118644	acc=0.847457627118644	precision=0.8141592920353983
+epoch=12	total_loss=3.4455849174410105	max_acc=0.847457627118644	acc=0.8203389830508474	precision=0.8141592920353983
+epoch=13	total_loss=1.0307544134557247	max_acc=0.847457627118644	acc=0.8372881355932204	precision=0.8141592920353983
+epoch=14	total_loss=0.3911247133510187	max_acc=0.8677966101694915	acc=0.8677966101694915	precision=0.7984496124031008
+epoch=15	total_loss=3.2685917661874555	max_acc=0.8677966101694915	acc=0.8542372881355932	precision=0.7984496124031008
+epoch=16	total_loss=5.368333180202171	max_acc=0.8677966101694915	acc=0.8305084745762712	precision=0.7984496124031008
+epoch=17	total_loss=1.1608417592942715	max_acc=0.8677966101694915	acc=0.7694915254237288	precision=0.7984496124031008
+epoch=18	total_loss=8.310213439166546	max_acc=0.8677966101694915	acc=0.6745762711864407	precision=0.7984496124031008
+epoch=19	total_loss=4.255098596215248	max_acc=0.8677966101694915	acc=0.752542372881356	precision=0.7984496124031008
+epoch=20	total_loss=4.620782998390496	max_acc=0.8677966101694915	acc=0.6644067796610169	precision=0.7984496124031008
+epoch=21	total_loss=1.76527846371755	max_acc=0.8677966101694915	acc=0.823728813559322	precision=0.7984496124031008
+epoch=22	total_loss=3.1332001695409417	max_acc=0.8677966101694915	acc=0.711864406779661	precision=0.7984496124031008
+epoch=23	total_loss=12.005641547963023	max_acc=0.8677966101694915	acc=0.8203389830508474	precision=0.7984496124031008
+epoch=24	total_loss=9.595897447317839	max_acc=0.8677966101694915	acc=0.8	precision=0.7984496124031008
+Early stopping at epoch 24
+Best Test Accuracy: 0.8678
+Best Fake Precision: 0.7984
+Best Fake Recall: 0.8879
+Best Faek F1: 0.8408
+Best Real Precision: 0.9217
+Best Real Recall: 0.8547
+Best Real F1: 0.8870
+========================================================================================================================================================================================================
+Run time:  4
+epoch=0	total_loss=17.941069453954697	max_acc=0.6474576271186441	acc=0.6474576271186441	precision=0.5275229357798165
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=1	total_loss=7.992374002933502	max_acc=0.6474576271186441	acc=0.39322033898305087	precision=0.5275229357798165
+epoch=2	total_loss=4.5234063705429435	max_acc=0.8372881355932204	acc=0.8372881355932204	precision=0.7463768115942029
+epoch=3	total_loss=3.7445097090676427	max_acc=0.8372881355932204	acc=0.6779661016949152	precision=0.7463768115942029
+epoch=4	total_loss=1.8374436486046761	max_acc=0.8372881355932204	acc=0.7288135593220338	precision=0.7463768115942029
+epoch=5	total_loss=3.032386622624472	max_acc=0.8372881355932204	acc=0.8271186440677966	precision=0.7463768115942029
+epoch=6	total_loss=4.674046621192247	max_acc=0.8372881355932204	acc=0.8135593220338984	precision=0.7463768115942029
+epoch=7	total_loss=3.9546522051095963	max_acc=0.8372881355932204	acc=0.6542372881355932	precision=0.7463768115942029
+epoch=8	total_loss=5.8634227411821485	max_acc=0.8779661016949153	acc=0.8779661016949153	precision=0.8225806451612904
+epoch=9	total_loss=3.3956915605813265	max_acc=0.8779661016949153	acc=0.8711864406779661	precision=0.8225806451612904
+epoch=10	total_loss=3.4188085682690144	max_acc=0.8779661016949153	acc=0.7864406779661017	precision=0.8225806451612904
+epoch=11	total_loss=1.0759434816427529	max_acc=0.8779661016949153	acc=0.8305084745762712	precision=0.8225806451612904
+epoch=12	total_loss=3.3101113345474005	max_acc=0.8779661016949153	acc=0.8508474576271187	precision=0.8225806451612904
+epoch=13	total_loss=4.715878409799188	max_acc=0.8779661016949153	acc=0.847457627118644	precision=0.8225806451612904
+epoch=14	total_loss=2.837639938108623	max_acc=0.8779661016949153	acc=0.8610169491525423	precision=0.8225806451612904
+epoch=15	total_loss=2.853531344793737	max_acc=0.8779661016949153	acc=0.8406779661016949	precision=0.8225806451612904
+epoch=16	total_loss=0.6828902140259743	max_acc=0.8779661016949153	acc=0.8610169491525423	precision=0.8225806451612904
+epoch=17	total_loss=4.621079818345606	max_acc=0.8779661016949153	acc=0.8338983050847457	precision=0.8225806451612904
+epoch=18	total_loss=0.709717130754143	max_acc=0.8779661016949153	acc=0.8576271186440678	precision=0.8225806451612904
+Early stopping at epoch 18
+Best Test Accuracy: 0.8780
+Best Fake Precision: 0.8226
+Best Fake Recall: 0.8793
+Best Faek F1: 0.8500
+Best Real Precision: 0.9181
+Best Real Recall: 0.8771
+Best Real F1: 0.8971
+========================================================================================================================================================================================================
+Run time:  5
+epoch=0	total_loss=18.06993481516838	max_acc=0.7627118644067796	acc=0.7627118644067796	precision=0.6263736263736264
+epoch=1	total_loss=10.859434224665165	max_acc=0.7627118644067796	acc=0.735593220338983	precision=0.6263736263736264
+epoch=2	total_loss=7.116170370951295	max_acc=0.7627118644067796	acc=0.7322033898305085	precision=0.6263736263736264
+epoch=3	total_loss=4.327337071998045	max_acc=0.7627118644067796	acc=0.6067796610169491	precision=0.6263736263736264
+epoch=4	total_loss=4.479125294834375	max_acc=0.7627118644067796	acc=0.41694915254237286	precision=0.6263736263736264
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=5	total_loss=10.835693545639515	max_acc=0.7627118644067796	acc=0.6067796610169491	precision=0.6263736263736264
+epoch=6	total_loss=5.742475513368845	max_acc=0.7627118644067796	acc=0.488135593220339	precision=0.6263736263736264
+epoch=7	total_loss=7.285535112023354	max_acc=0.8338983050847457	acc=0.8338983050847457	precision=0.9036144578313253
+epoch=8	total_loss=7.034145824611187	max_acc=0.8338983050847457	acc=0.7864406779661017	precision=0.9036144578313253
+epoch=9	total_loss=11.246097713708878	max_acc=0.8338983050847457	acc=0.6	precision=0.9036144578313253
+epoch=10	total_loss=9.32398471981287	max_acc=0.8338983050847457	acc=0.6406779661016949	precision=0.9036144578313253
+epoch=11	total_loss=6.711307678371668	max_acc=0.8440677966101695	acc=0.8440677966101695	precision=0.8181818181818182
+epoch=12	total_loss=5.606587994843721	max_acc=0.8440677966101695	acc=0.7050847457627119	precision=0.8181818181818182
+epoch=13	total_loss=6.507905071601272	max_acc=0.8440677966101695	acc=0.8169491525423729	precision=0.8181818181818182
+epoch=14	total_loss=2.060659267939627	max_acc=0.8440677966101695	acc=0.7152542372881356	precision=0.8181818181818182
+epoch=15	total_loss=2.317737845238298	max_acc=0.8440677966101695	acc=0.6711864406779661	precision=0.8181818181818182
+epoch=16	total_loss=10.243478052318096	max_acc=0.8440677966101695	acc=0.6779661016949152	precision=0.8181818181818182
+epoch=17	total_loss=9.804540328681469	max_acc=0.8440677966101695	acc=0.8203389830508474	precision=0.8181818181818182
+epoch=18	total_loss=4.5924129746854305	max_acc=0.8440677966101695	acc=0.8101694915254237	precision=0.8181818181818182
+epoch=19	total_loss=2.943185267271474	max_acc=0.847457627118644	acc=0.847457627118644	precision=0.9080459770114943
+epoch=20	total_loss=6.010734886862338	max_acc=0.847457627118644	acc=0.8067796610169492	precision=0.9080459770114943
+epoch=21	total_loss=3.8948629507794976	max_acc=0.847457627118644	acc=0.8033898305084746	precision=0.9080459770114943
+epoch=22	total_loss=2.6417949805036187	max_acc=0.847457627118644	acc=0.8169491525423729	precision=0.9080459770114943
+epoch=23	total_loss=4.545658259652555	max_acc=0.847457627118644	acc=0.7898305084745763	precision=0.9080459770114943
+epoch=24	total_loss=4.31079176813364	max_acc=0.847457627118644	acc=0.823728813559322	precision=0.9080459770114943
+epoch=25	total_loss=4.160218418575823	max_acc=0.847457627118644	acc=0.6508474576271186	precision=0.9080459770114943
+epoch=26	total_loss=8.27557741291821	max_acc=0.847457627118644	acc=0.7762711864406779	precision=0.9080459770114943
+epoch=27	total_loss=6.051208779215813	max_acc=0.8508474576271187	acc=0.8508474576271187	precision=0.839622641509434
+epoch=28	total_loss=3.5337722753174603	max_acc=0.8508474576271187	acc=0.8305084745762712	precision=0.839622641509434
+epoch=29	total_loss=2.0381695616524667	max_acc=0.8508474576271187	acc=0.8305084745762712	precision=0.839622641509434
+epoch=30	total_loss=4.6966308248229325	max_acc=0.8508474576271187	acc=0.8508474576271187	precision=0.839622641509434
+epoch=31	total_loss=1.7075654794462025	max_acc=0.8508474576271187	acc=0.8338983050847457	precision=0.839622641509434
+epoch=32	total_loss=0.9508685680048075	max_acc=0.8508474576271187	acc=0.847457627118644	precision=0.839622641509434
+epoch=33	total_loss=4.204223812208511	max_acc=0.8508474576271187	acc=0.8372881355932204	precision=0.839622641509434
+epoch=34	total_loss=3.3844804589170963	max_acc=0.8508474576271187	acc=0.8135593220338984	precision=0.839622641509434
+epoch=35	total_loss=11.469700487330556	max_acc=0.8508474576271187	acc=0.8	precision=0.839622641509434
+epoch=36	total_loss=6.491889277938753	max_acc=0.8508474576271187	acc=0.7830508474576271	precision=0.839622641509434
+epoch=37	total_loss=4.271018008701503	max_acc=0.8508474576271187	acc=0.6745762711864407	precision=0.839622641509434
+Early stopping at epoch 37
+Best Test Accuracy: 0.8508
+Best Fake Precision: 0.8396
+Best Fake Recall: 0.7672
+Best Faek F1: 0.8018
+Best Real Precision: 0.8571
+Best Real Recall: 0.9050
+Best Real F1: 0.8804
+========================================================================================================================================================================================================
+Run time:  6
+epoch=0	total_loss=15.973099134862423	max_acc=0.823728813559322	acc=0.823728813559322	precision=0.7318840579710145
+epoch=1	total_loss=7.891323268413544	max_acc=0.8305084745762712	acc=0.8305084745762712	precision=0.8055555555555556
+epoch=2	total_loss=7.407504487782717	max_acc=0.8305084745762712	acc=0.6610169491525424	precision=0.8055555555555556
+epoch=3	total_loss=4.249296357855201	max_acc=0.864406779661017	acc=0.864406779661017	precision=0.8015873015873016
+epoch=4	total_loss=2.461978849139996	max_acc=0.864406779661017	acc=0.735593220338983	precision=0.8015873015873016
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=5	total_loss=6.357477718964219	max_acc=0.864406779661017	acc=0.39322033898305087	precision=0.8015873015873016
+epoch=6	total_loss=7.279226321727037	max_acc=0.864406779661017	acc=0.7186440677966102	precision=0.8015873015873016
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=7	total_loss=2.9549790788441896	max_acc=0.864406779661017	acc=0.6067796610169491	precision=0.8015873015873016
+epoch=8	total_loss=4.323444303125143	max_acc=0.864406779661017	acc=0.7898305084745763	precision=0.8015873015873016
+epoch=9	total_loss=8.906927034258842	max_acc=0.864406779661017	acc=0.6169491525423729	precision=0.8015873015873016
+epoch=10	total_loss=3.0276620779186487	max_acc=0.864406779661017	acc=0.847457627118644	precision=0.8015873015873016
+epoch=11	total_loss=3.3181390897370875	max_acc=0.864406779661017	acc=0.8406779661016949	precision=0.8015873015873016
+epoch=12	total_loss=6.370307489298284	max_acc=0.864406779661017	acc=0.7389830508474576	precision=0.8015873015873016
+epoch=13	total_loss=5.754300626926124	max_acc=0.864406779661017	acc=0.8372881355932204	precision=0.8015873015873016
+Early stopping at epoch 13
+Best Test Accuracy: 0.8644
+Best Fake Precision: 0.8016
+Best Fake Recall: 0.8707
+Best Faek F1: 0.8347
+Best Real Precision: 0.9112
+Best Real Recall: 0.8603
+Best Real F1: 0.8851
+========================================================================================================================================================================================================
+Run time:  7
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=0	total_loss=16.857120499014854	max_acc=0.6067796610169491	acc=0.6067796610169491	precision=0.0
+epoch=1	total_loss=7.257073455490172	max_acc=0.8508474576271187	acc=0.8508474576271187	precision=0.8103448275862069
+epoch=2	total_loss=4.604023102205247	max_acc=0.8508474576271187	acc=0.8135593220338984	precision=0.8103448275862069
+epoch=3	total_loss=2.907142126117833	max_acc=0.8508474576271187	acc=0.8	precision=0.8103448275862069
+epoch=4	total_loss=6.504206846468151	max_acc=0.8508474576271187	acc=0.735593220338983	precision=0.8103448275862069
+epoch=5	total_loss=2.1161008628550917	max_acc=0.8576271186440678	acc=0.8576271186440678	precision=0.8135593220338984
+epoch=6	total_loss=4.958332236856222	max_acc=0.8576271186440678	acc=0.7423728813559322	precision=0.8135593220338984
+epoch=7	total_loss=1.7246294706128538	max_acc=0.8576271186440678	acc=0.8440677966101695	precision=0.8135593220338984
+epoch=8	total_loss=4.772500946186483	max_acc=0.8576271186440678	acc=0.6610169491525424	precision=0.8135593220338984
+epoch=9	total_loss=2.435572802554816	max_acc=0.8576271186440678	acc=0.7966101694915254	precision=0.8135593220338984
+epoch=10	total_loss=5.817409191280603	max_acc=0.8576271186440678	acc=0.7796610169491526	precision=0.8135593220338984
+epoch=11	total_loss=1.4349260400049388	max_acc=0.8576271186440678	acc=0.8542372881355932	precision=0.8135593220338984
+epoch=12	total_loss=0.5575224189669825	max_acc=0.8576271186440678	acc=0.823728813559322	precision=0.8135593220338984
+epoch=13	total_loss=0.5828808113583364	max_acc=0.864406779661017	acc=0.864406779661017	precision=0.8653846153846154
+epoch=14	total_loss=3.9876019855146296	max_acc=0.864406779661017	acc=0.7796610169491526	precision=0.8653846153846154
+epoch=15	total_loss=0.3445214980747551	max_acc=0.864406779661017	acc=0.7728813559322034	precision=0.8653846153846154
+epoch=16	total_loss=3.971108162193559	max_acc=0.864406779661017	acc=0.45084745762711864	precision=0.8653846153846154
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=17	total_loss=11.06352967955172	max_acc=0.864406779661017	acc=0.6067796610169491	precision=0.8653846153846154
+epoch=18	total_loss=11.646193517372012	max_acc=0.864406779661017	acc=0.6101694915254238	precision=0.8653846153846154
+epoch=19	total_loss=7.608557865023613	max_acc=0.864406779661017	acc=0.488135593220339	precision=0.8653846153846154
+epoch=20	total_loss=3.7612689617089927	max_acc=0.864406779661017	acc=0.8372881355932204	precision=0.8653846153846154
+epoch=21	total_loss=5.676182687282562	max_acc=0.864406779661017	acc=0.8610169491525423	precision=0.8653846153846154
+epoch=22	total_loss=4.2214593486860394	max_acc=0.864406779661017	acc=0.823728813559322	precision=0.8653846153846154
+epoch=23	total_loss=8.528603294864297	max_acc=0.864406779661017	acc=0.7728813559322034	precision=0.8653846153846154
+Early stopping at epoch 23
+Best Test Accuracy: 0.8644
+Best Fake Precision: 0.8654
+Best Fake Recall: 0.7759
+Best Faek F1: 0.8182
+Best Real Precision: 0.8639
+Best Real Recall: 0.9218
+Best Real F1: 0.8919
+========================================================================================================================================================================================================
+Run time:  8
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=0	total_loss=18.335716664791107	max_acc=0.6067796610169491	acc=0.6067796610169491	precision=0.0
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=1	total_loss=8.011935357004404	max_acc=0.6067796610169491	acc=0.39322033898305087	precision=0.0
+epoch=2	total_loss=4.695322472602129	max_acc=0.6067796610169491	acc=0.5389830508474577	precision=0.0
+epoch=3	total_loss=2.8074923490639776	max_acc=0.8067796610169492	acc=0.8067796610169492	precision=0.927536231884058
+epoch=4	total_loss=3.089138507610187	max_acc=0.8067796610169492	acc=0.4745762711864407	precision=0.927536231884058
+epoch=5	total_loss=2.36656262120232	max_acc=0.8440677966101695	acc=0.8440677966101695	precision=0.85
+epoch=6	total_loss=6.706469812430441	max_acc=0.8440677966101695	acc=0.7661016949152543	precision=0.85
+epoch=7	total_loss=4.863539102487266	max_acc=0.8813559322033898	acc=0.8813559322033898	precision=0.824
+epoch=8	total_loss=1.9613454879727215	max_acc=0.8813559322033898	acc=0.8305084745762712	precision=0.824
+epoch=9	total_loss=0.9574463121243753	max_acc=0.8813559322033898	acc=0.8813559322033898	precision=0.824
+epoch=10	total_loss=0.5722324597882107	max_acc=0.8813559322033898	acc=0.8203389830508474	precision=0.824
+epoch=11	total_loss=0.325083893185365	max_acc=0.8813559322033898	acc=0.8372881355932204	precision=0.824
+epoch=12	total_loss=0.7531604117175448	max_acc=0.8813559322033898	acc=0.7966101694915254	precision=0.824
+epoch=13	total_loss=2.5003167728718836	max_acc=0.8813559322033898	acc=0.8271186440677966	precision=0.824
+epoch=14	total_loss=5.173038223525509	max_acc=0.8813559322033898	acc=0.7084745762711865	precision=0.824
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=15	total_loss=9.030708260834217	max_acc=0.8813559322033898	acc=0.39322033898305087	precision=0.824
+epoch=16	total_loss=3.1905252034775913	max_acc=0.8813559322033898	acc=0.8169491525423729	precision=0.824
+epoch=17	total_loss=1.7091239837463945	max_acc=0.8813559322033898	acc=0.41694915254237286	precision=0.824
+Early stopping at epoch 17
+Best Test Accuracy: 0.8814
+Best Fake Precision: 0.8240
+Best Fake Recall: 0.8879
+Best Faek F1: 0.8548
+Best Real Precision: 0.9235
+Best Real Recall: 0.8771
+Best Real F1: 0.8997
+========================================================================================================================================================================================================
+Run time:  9
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=0	total_loss=17.889396369457245	max_acc=0.6067796610169491	acc=0.6067796610169491	precision=0.0
+epoch=1	total_loss=9.627669960260391	max_acc=0.6067796610169491	acc=0.39661016949152544	precision=0.0
+epoch=2	total_loss=5.502637902740389	max_acc=0.6542372881355932	acc=0.6542372881355932	precision=1.0
+epoch=3	total_loss=5.563885977491736	max_acc=0.7762711864406779	acc=0.7762711864406779	precision=0.9464285714285714
+epoch=4	total_loss=2.2555145733058453	max_acc=0.864406779661017	acc=0.864406779661017	precision=0.8392857142857143
+epoch=5	total_loss=1.657763599185273	max_acc=0.864406779661017	acc=0.8610169491525423	precision=0.8392857142857143
+epoch=6	total_loss=1.6359813900489826	max_acc=0.864406779661017	acc=0.7864406779661017	precision=0.8392857142857143
+epoch=7	total_loss=2.027984680957161	max_acc=0.864406779661017	acc=0.8372881355932204	precision=0.8392857142857143
+epoch=8	total_loss=6.164564175531268	max_acc=0.864406779661017	acc=0.4	precision=0.8392857142857143
+epoch=9	total_loss=5.862829314544797	max_acc=0.864406779661017	acc=0.7796610169491526	precision=0.8392857142857143
+epoch=10	total_loss=3.2628049680497497	max_acc=0.864406779661017	acc=0.823728813559322	precision=0.8392857142857143
+epoch=11	total_loss=1.1276440065703355	max_acc=0.864406779661017	acc=0.8576271186440678	precision=0.8392857142857143
+epoch=12	total_loss=1.1341324894165155	max_acc=0.864406779661017	acc=0.7661016949152543	precision=0.8392857142857143
+epoch=13	total_loss=1.3273742760356981	max_acc=0.864406779661017	acc=0.7898305084745763	precision=0.8392857142857143
+epoch=14	total_loss=1.281264663208276	max_acc=0.864406779661017	acc=0.864406779661017	precision=0.8392857142857143
+Early stopping at epoch 14
+Best Test Accuracy: 0.8644
+Best Fake Precision: 0.8393
+Best Fake Recall: 0.8103
+Best Faek F1: 0.8246
+Best Real Precision: 0.8798
+Best Real Recall: 0.8994
+Best Real F1: 0.8895
+========================================================================================================================================================================================================
+Run time:  10
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=0	total_loss=17.30950951576233	max_acc=0.6067796610169491	acc=0.6067796610169491	precision=0.0
+epoch=1	total_loss=8.685677539557219	max_acc=0.847457627118644	acc=0.847457627118644	precision=0.9080459770114943
+epoch=2	total_loss=4.664743862114847	max_acc=0.847457627118644	acc=0.7389830508474576	precision=0.9080459770114943
+epoch=3	total_loss=6.168144550174475	max_acc=0.847457627118644	acc=0.535593220338983	precision=0.9080459770114943
+epoch=4	total_loss=3.259166482836008	max_acc=0.8508474576271187	acc=0.8508474576271187	precision=0.7608695652173914
+epoch=5	total_loss=5.032000289298594	max_acc=0.8508474576271187	acc=0.8101694915254237	precision=0.7608695652173914
+epoch=6	total_loss=3.906384768895805	max_acc=0.8508474576271187	acc=0.6949152542372882	precision=0.7608695652173914
+epoch=7	total_loss=1.3057850329205394	max_acc=0.8711864406779661	acc=0.8711864406779661	precision=0.8145161290322581
+epoch=8	total_loss=0.7205641116015613	max_acc=0.8711864406779661	acc=0.8305084745762712	precision=0.8145161290322581
+epoch=9	total_loss=0.515475761378184	max_acc=0.8711864406779661	acc=0.823728813559322	precision=0.8145161290322581
+epoch=10	total_loss=0.8523285057744943	max_acc=0.8711864406779661	acc=0.864406779661017	precision=0.8145161290322581
+epoch=11	total_loss=1.1567967816372402	max_acc=0.8711864406779661	acc=0.7389830508474576	precision=0.8145161290322581
+epoch=12	total_loss=4.512579745380208	max_acc=0.8711864406779661	acc=0.7627118644067796	precision=0.8145161290322581
+epoch=13	total_loss=10.736850508954376	max_acc=0.8711864406779661	acc=0.6711864406779661	precision=0.8145161290322581
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/data3/*****/.conda/envs/llm/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+epoch=14	total_loss=8.065555579960346	max_acc=0.8711864406779661	acc=0.39322033898305087	precision=0.8145161290322581
+epoch=15	total_loss=5.01890719961375	max_acc=0.8711864406779661	acc=0.7220338983050848	precision=0.8145161290322581
+epoch=16	total_loss=4.53141831420362	max_acc=0.8711864406779661	acc=0.7762711864406779	precision=0.8145161290322581
+epoch=17	total_loss=5.458988320082426	max_acc=0.8711864406779661	acc=0.8305084745762712	precision=0.8145161290322581
+Early stopping at epoch 17
+Best Test Accuracy: 0.8712
+Best Fake Precision: 0.8145
+Best Fake Recall: 0.8707
+Best Faek F1: 0.8417
+Best Real Precision: 0.9123
+Best Real Recall: 0.8715
+Best Real F1: 0.8914
+========================================================================================================================================================================================================
+********************************************************************************************************************************************************************************************************
+Average Test Accuracy: 86.81% ± 0.79%
+Average Fake Precision: 83.01% ± 2.07%
+Average Fake Recall: 83.79% ± 4.43%
+Average Fake F1: 83.28% ± 1.48%
+Average Real Precision: 89.53% ± 2.36%
+Average Real Recall: 88.77% ± 2.14%
+Average Real F1: 89.10% ± 0.55%
+Run times:  10
+********************************************************************************************************************************************************************************************************

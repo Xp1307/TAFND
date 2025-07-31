@@ -1,0 +1,521 @@
+nohup: ignoring input
+========================================================================================================================================================================================================
+===> running the 1-th time.
+seed number:  1
+===> start training at:  0718-144822
+===> process weibo data...
+    load weibo 1026  train data from files, include 409 fake and 617 real news.
+===> process weibo data...
+    load weibo 146   val data from files, include 65 fake and 81 real news.
+===> process weibo data...
+    load weibo 295   test data from files, include 116 fake and 179 real news.
+===> cluster text and image items and get the cluster pseudo-label.
+===> perform the Unsupervised context learning to get the context features.
+     load unsupervised model that trained success.
+Compared_Baselines/2024_CSFND/run.py:57: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  unsup_model.load_state_dict(torch.load(unsup_checkpoint)['state_dict'])
+We strongly recommend passing in an `attention_mask` since your input_ids may be padded. See https://huggingface.co/docs/transformers/troubleshooting#incorrect-output-when-padding-tokens-arent-masked.
+You may ignore this warning if your `pad_token_id` (0) is identical to the `bos_token_id` (0), `eos_token_id` (2), or the `sep_token_id` (None), and your input is not padded.
+===> training the main model.
+    => select the primary modality: image
+  Epoch 00| train loss 55.243595, con 14.419847, intra 32.887914, pred 19.839580, acc 0.699512|valid loss 16.669704, con 3.516163, intra 8.078165, pred 5.075376, acc 0.739865
+  Epoch 01| train loss 47.905190, con 12.822074, intra 28.806760, pred 15.690891, acc 0.840000|valid loss 18.855783, con 6.283262, intra 7.994569, pred 4.577952, acc 0.787162
+  Epoch 02| train loss 44.739918, con 14.294379, intra 25.202257, pred 13.108202, acc 0.887805|valid loss 16.388950, con 4.824298, intra 6.951852, pred 4.612802, acc 0.807432
+  Epoch 03| train loss 39.857193, con 11.557633, intra 23.318032, pred 12.453817, acc 0.911220|valid loss 16.167177, con 5.135416, intra 6.670029, pred 4.361732, acc 0.834459
+  Epoch 04| train loss 40.396967, con 12.039033, intra 23.258336, pred 12.748993, acc 0.928780|valid loss 13.177711, con 3.291997, intra 5.588435, pred 4.297279, acc 0.834459
+  Epoch 05| train loss 27.966877, con 6.742662, intra 17.325150, pred 9.747658, acc 0.928780|valid loss 13.554319, con 3.687072, intra 5.662298, pred 4.204949, acc 0.847973
+  Epoch 06| train loss 33.070062, con 9.582986, intra 19.515522, pred 9.928884, acc 0.941463|valid loss 14.389455, con 4.343479, intra 5.801612, pred 4.244364, acc 0.824324
+  Epoch 07| train loss 21.745908, con 4.889601, intra 14.028017, pred 7.070722, acc 0.941463|valid loss 16.194458, con 6.071045, intra 5.858967, pred 4.264447, acc 0.831081
+  Epoch 08| train loss 19.885512, con 5.950469, intra 11.575897, pred 5.897865, acc 0.940488|valid loss 15.955886, con 5.758139, intra 5.905097, pred 4.292652, acc 0.817568
+  Epoch 09| train loss 14.825117, con 3.563339, intra 9.417236, pred 4.611353, acc 0.956098|valid loss 15.068124, con 5.003742, intra 5.713656, pred 4.350725, acc 0.810811
+  Epoch 10| train loss 29.502794, con 8.645495, intra 17.326102, pred 8.827989, acc 0.944390|valid loss 13.705704, con 3.922138, intra 5.583231, pred 4.200334, acc 0.844595
+  Epoch 11| train loss 14.758167, con 3.228334, intra 9.461178, pred 5.171635, acc 0.951220|valid loss 13.740784, con 3.850143, intra 5.747781, pred 4.142859, acc 0.847973
+  Epoch 12| train loss 9.426055, con 2.245193, intra 5.998128, pred 2.956835, acc 0.964878|valid loss 14.563011, con 4.463885, intra 5.964165, pred 4.134962, acc 0.847973
+  Epoch 13| train loss 11.165899, con 2.949970, intra 6.887889, pred 3.320098, acc 0.962927|valid loss 14.924253, con 4.921519, intra 5.871273, pred 4.131461, acc 0.841216
+  Epoch 14| train loss 17.595943, con 5.253467, intra 10.305754, pred 5.091805, acc 0.966829|valid loss 14.005210, con 4.204211, intra 5.670638, pred 4.130361, acc 0.844595
+  Epoch 15| train loss 20.075714, con 5.663154, intra 12.046655, pred 5.914762, acc 0.967805|valid loss 13.927595, con 4.166061, intra 5.593478, pred 4.168056, acc 0.841216
+  Epoch 16| train loss 3.874890, con 0.311818, intra 2.996927, pred 1.415364, acc 0.966829|valid loss 14.742620, con 4.936928, intra 5.654696, pred 4.150996, acc 0.847973
+  Epoch 17| train loss 12.299462, con 3.148756, intra 7.666750, pred 3.709890, acc 0.972683|valid loss 14.612329, con 4.842318, intra 5.680035, pred 4.089976, acc 0.851351
+  Epoch 18| train loss 6.878913, con 1.328630, intra 4.675796, pred 2.186217, acc 0.975610|valid loss 13.539092, con 4.868919, intra 4.944507, pred 3.725666, acc 0.854730
+  Epoch 19| train loss 11.793781, con 3.568946, intra 6.896386, pred 3.321121, acc 0.966829|valid loss 13.239009, con 4.415786, intra 5.033747, pred 3.789476, acc 0.844595
+  Epoch 20| train loss 6.092115, con 1.643799, intra 3.694726, pred 1.883976, acc 0.973659|valid loss 13.171045, con 4.428377, intra 4.939591, pred 3.803077, acc 0.844595
+  Epoch 21| train loss 7.221065, con 1.217487, intra 4.972116, pred 2.578654, acc 0.967805|valid loss 12.705218, con 4.081994, intra 4.872089, pred 3.751135, acc 0.858108
+  Epoch 22| train loss 11.222480, con 3.400513, intra 6.518095, pred 3.259677, acc 0.973659|valid loss 12.544878, con 3.910543, intra 4.883434, pred 3.750901, acc 0.858108
+  Epoch 23| train loss 5.861669, con 1.514336, intra 3.615582, pred 1.829378, acc 0.975610|valid loss 12.855552, con 4.175536, intra 4.914180, pred 3.765834, acc 0.851351
+  Epoch 24| train loss 12.506338, con 2.995752, intra 7.923648, pred 3.967346, acc 0.975610|valid loss 12.816166, con 4.140121, intra 4.921271, pred 3.754775, acc 0.858108
+  Epoch 25| train loss 10.417766, con 2.839968, intra 6.278693, pred 3.247761, acc 0.969756|valid loss 12.758549, con 4.083479, intra 4.928826, pred 3.746243, acc 0.854730
+  Epoch 26| train loss 11.674960, con 3.656015, intra 6.677815, pred 3.352828, acc 0.972683|valid loss 12.976473, con 4.244440, intra 4.915383, pred 3.816650, acc 0.827703
+  Epoch 27| train loss 10.193522, con 2.661113, intra 6.217732, pred 3.286694, acc 0.975610|valid loss 12.859715, con 4.164329, intra 4.906627, pred 3.788761, acc 0.844595
+  Epoch 28| train loss 16.261085, con 3.985350, intra 10.228213, pred 5.118804, acc 0.972683|valid loss 12.815540, con 4.114335, intra 4.921599, pred 3.779606, acc 0.851351
+  Epoch 29| train loss 7.852038, con 1.628687, intra 5.200406, pred 2.557362, acc 0.972683|valid loss 12.789825, con 4.150256, intra 4.888041, pred 3.751530, acc 0.854730
+  Epoch 30| train loss 12.888648, con 2.638693, intra 8.535290, pred 4.286663, acc 0.968780|valid loss 12.684898, con 4.031282, intra 4.902514, pred 3.751104, acc 0.861486
+  Epoch 31| train loss 9.067388, con 2.061056, intra 5.831699, pred 2.936582, acc 0.973659|valid loss 12.656609, con 3.997901, intra 4.908683, pred 3.750024, acc 0.858108
+  Epoch 32| train loss 9.090719, con 2.147261, intra 5.782106, pred 2.903381, acc 0.973659|valid loss 12.641889, con 3.987520, intra 4.899186, pred 3.755183, acc 0.851351
+  Epoch 33| train loss 7.919147, con 1.200291, intra 5.516655, pred 3.005503, acc 0.981463|valid loss 12.724669, con 4.047174, intra 4.918252, pred 3.759244, acc 0.851351
+  Epoch 34| train loss 5.795146, con 1.413939, intra 3.649603, pred 1.829011, acc 0.974634|valid loss 12.640376, con 3.976992, intra 4.897589, pred 3.765796, acc 0.847973
+  Epoch 35| train loss 11.382892, con 2.840899, intra 7.142772, pred 3.498050, acc 0.980488|valid loss 12.753736, con 4.095671, intra 4.888671, pred 3.769392, acc 0.851351
+  Epoch 36| train loss 7.416778, con 1.376677, intra 5.010300, pred 2.574502, acc 0.968780|valid loss 12.825145, con 4.165969, intra 4.896059, pred 3.763115, acc 0.851351
+  Epoch 37| train loss 12.637429, con 4.227767, intra 6.929517, pred 3.700360, acc 0.974634|valid loss 12.860733, con 4.199448, intra 4.905033, pred 3.756253, acc 0.854730
+  Epoch 38| train loss 13.628861, con 3.275496, intra 8.560817, pred 4.481369, acc 0.975610|valid loss 12.665682, con 4.009476, intra 4.899198, pred 3.757007, acc 0.854730
+  Epoch 39| train loss 11.855072, con 2.460118, intra 7.799644, pred 3.988274, acc 0.972683|valid loss 12.708370, con 4.042695, intra 4.910123, pred 3.755551, acc 0.854730
+  Epoch 40| train loss 9.964839, con 2.339095, intra 6.325387, pred 3.250893, acc 0.974634|valid loss 12.832663, con 4.157585, intra 4.920782, pred 3.754295, acc 0.851351
+  training stop in epoch 30.
+  the best model had been saved to  ./FinalModel_weibo_clu17_lClu0.2_lTri0.6.pt
+Compared_Baselines/2024_CSFND/run.py:98: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  main_model.load_state_dict(torch.load(final_saved_model_path)['state_dict'])
+===> construct multiple binary classifiers to detect fake news within each news cluster.
+--- overall fake pre 0.871560 recal 0.818966 f1 0.844444 acc 0.881356|overall real pre 0.887097 recal 0.921788 f1 0.904110 acc 0.881356|mlp       
+******************************************************************************************************************************************************
+===> final test results:
+fake precision 0.8716 recall 0.8190 f1 0.8444.
+real precision 0.8871 recall 0.9218 f1 0.9041.
+global accuracy 0.8814.
+******************************************************************************************************************************************************
+========================================================================================================================================================================================================
+===> running the 2-th time.
+seed number:  2
+===> start training at:  0718-150347
+===> process weibo data...
+    load weibo 1026  train data from files, include 409 fake and 617 real news.
+===> process weibo data...
+    load weibo 146   val data from files, include 65 fake and 81 real news.
+===> process weibo data...
+    load weibo 295   test data from files, include 116 fake and 179 real news.
+===> cluster text and image items and get the cluster pseudo-label.
+===> perform the Unsupervised context learning to get the context features.
+     load unsupervised model that trained success.
+Compared_Baselines/2024_CSFND/run.py:57: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  unsup_model.load_state_dict(torch.load(unsup_checkpoint)['state_dict'])
+===> training the main model.
+    => select the primary modality: image
+  Epoch 00| train loss 55.696366, con 14.618759, intra 33.235522, pred 19.605209, acc 0.698537|valid loss 16.408886, con 3.449712, intra 7.924291, pred 5.034883, acc 0.743243
+  Epoch 01| train loss 49.140959, con 13.554213, intra 29.070369, pred 16.290940, acc 0.835122|valid loss 16.261368, con 3.948121, intra 7.806719, pred 4.506527, acc 0.824324
+  Epoch 02| train loss 37.168651, con 8.593519, intra 23.853860, pred 11.803177, acc 0.910244|valid loss 18.385809, con 6.079726, intra 7.581906, pred 4.724176, acc 0.766892
+  Epoch 03| train loss 44.513482, con 15.075571, intra 24.562995, pred 12.187289, acc 0.904390|valid loss 16.641508, con 5.406768, intra 6.660603, pred 4.574137, acc 0.800676
+  Epoch 04| train loss 41.666128, con 11.564450, intra 24.907183, pred 12.986236, acc 0.891707|valid loss 15.562641, con 4.855750, intra 6.406387, pred 4.300504, acc 0.847973
+  Epoch 05| train loss 30.016901, con 7.956466, intra 18.233255, pred 9.567949, acc 0.926829|valid loss 15.320211, con 5.094243, intra 5.954247, pred 4.271723, acc 0.837838
+  Epoch 06| train loss 26.855470, con 7.237704, intra 16.212306, pred 8.513647, acc 0.935610|valid loss 15.583155, con 5.361503, intra 6.125884, pred 4.095766, acc 0.868243
+  Epoch 07| train loss 22.624894, con 5.713801, intra 14.066822, pred 7.110676, acc 0.941463|valid loss 15.518831, con 5.271057, intra 6.187121, pred 4.060654, acc 0.851351
+  Epoch 08| train loss 19.073006, con 4.546031, intra 12.167220, pred 5.899386, acc 0.952195|valid loss 15.854026, con 5.622479, intra 6.146978, pred 4.084569, acc 0.861486
+  Epoch 09| train loss 15.866804, con 4.534580, intra 9.488302, pred 4.609806, acc 0.956098|valid loss 15.133001, con 5.124518, intra 5.856409, pred 4.152075, acc 0.841216
+  Epoch 10| train loss 16.763385, con 3.925151, intra 10.735248, pred 5.257464, acc 0.969756|valid loss 14.946672, con 4.900204, intra 5.863406, pred 4.183064, acc 0.834459
+  Epoch 11| train loss 12.681460, con 3.446186, intra 7.763422, pred 3.679632, acc 0.967805|valid loss 14.458514, con 4.643812, intra 5.695125, pred 4.119578, acc 0.847973
+  Epoch 12| train loss 11.774987, con 2.729644, intra 7.565373, pred 3.699924, acc 0.973659|valid loss 14.634638, con 4.892595, intra 5.713352, pred 4.028692, acc 0.847973
+  Epoch 13| train loss 12.229925, con 2.799475, intra 7.982559, pred 3.619728, acc 0.970732|valid loss 16.269485, con 6.207959, intra 6.011857, pred 4.049669, acc 0.851351
+  Epoch 14| train loss 6.418097, con 1.655519, intra 4.075713, pred 1.717163, acc 0.975610|valid loss 16.162476, con 6.144045, intra 6.002367, pred 4.016064, acc 0.868243
+  Epoch 15| train loss 10.984995, con 2.150902, intra 7.593696, pred 3.100991, acc 0.977561|valid loss 18.058367, con 7.764387, intra 6.191976, pred 4.102005, acc 0.844595
+  Epoch 16| train loss 12.927769, con 3.685042, intra 7.737061, pred 3.764164, acc 0.973659|valid loss 17.610970, con 7.376915, intra 5.983988, pred 4.250068, acc 0.837838
+  Epoch 17| train loss 11.388954, con 4.150348, intra 6.084832, pred 2.884435, acc 0.974634|valid loss 16.152184, con 6.193169, intra 5.873349, pred 4.085668, acc 0.847973
+  Epoch 18| train loss 5.899686, con 2.204632, intra 3.091578, pred 1.508688, acc 0.971707|valid loss 16.171804, con 6.338453, intra 5.792555, pred 4.040796, acc 0.851351
+  Epoch 19| train loss 2.816904, con 0.972733, intra 1.523636, pred 0.801337, acc 0.976585|valid loss 16.052780, con 6.275665, intra 5.710151, pred 4.066966, acc 0.841216
+  Epoch 20| train loss 16.057179, con 3.135820, intra 10.902005, pred 5.048385, acc 0.973659|valid loss 16.037031, con 6.162000, intra 5.695576, pred 4.179455, acc 0.827703
+  Epoch 21| train loss 4.388897, con 0.824323, intra 2.974657, pred 1.474792, acc 0.978537|valid loss 16.073603, con 6.216231, intra 5.687395, pred 4.169976, acc 0.834459
+  Epoch 22| train loss 6.184324, con 1.705401, intra 3.733499, pred 1.863559, acc 0.979512|valid loss 15.511543, con 5.709663, intra 5.657048, pred 4.144832, acc 0.834459
+  Epoch 23| train loss 10.416918, con 2.487891, intra 6.638889, pred 3.225344, acc 0.975610|valid loss 16.026546, con 6.198591, intra 5.677354, pred 4.150601, acc 0.834459
+  Epoch 24| train loss 11.381206, con 2.280844, intra 7.669870, pred 3.576230, acc 0.975610|valid loss 15.879777, con 6.041453, intra 5.677527, pred 4.160797, acc 0.831081
+  training stop in epoch 14.
+  the best model had been saved to  ./FinalModel_weibo_clu17_lClu0.2_lTri0.6.pt
+Compared_Baselines/2024_CSFND/run.py:98: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  main_model.load_state_dict(torch.load(final_saved_model_path)['state_dict'])
+===> construct multiple binary classifiers to detect fake news within each news cluster.
+--- overall fake pre 0.889908 recal 0.836207 f1 0.862222 acc 0.894915|overall real pre 0.897849 recal 0.932961 f1 0.915068 acc 0.894915|mlp       
+******************************************************************************************************************************************************
+===> final test results:
+fake precision 0.8899 recall 0.8362 f1 0.8622.
+real precision 0.8978 recall 0.9330 f1 0.9151.
+global accuracy 0.8949.
+******************************************************************************************************************************************************
+========================================================================================================================================================================================================
+===> running the 3-th time.
+seed number:  3
+===> start training at:  0718-151430
+===> process weibo data...
+    load weibo 1026  train data from files, include 409 fake and 617 real news.
+===> process weibo data...
+    load weibo 146   val data from files, include 65 fake and 81 real news.
+===> process weibo data...
+    load weibo 295   test data from files, include 116 fake and 179 real news.
+===> cluster text and image items and get the cluster pseudo-label.
+===> perform the Unsupervised context learning to get the context features.
+     load unsupervised model that trained success.
+Compared_Baselines/2024_CSFND/run.py:57: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  unsup_model.load_state_dict(torch.load(unsup_checkpoint)['state_dict'])
+===> training the main model.
+    => select the primary modality: image
+  Epoch 00| train loss 55.306149, con 15.166634, intra 32.235708, pred 19.759513, acc 0.697561|valid loss 17.195450, con 4.052816, intra 7.988862, pred 5.153772, acc 0.712838
+  Epoch 01| train loss 44.865639, con 12.239540, intra 26.618218, pred 15.019701, acc 0.826341|valid loss 17.285540, con 4.760148, intra 8.059890, pred 4.465502, acc 0.834459
+  Epoch 02| train loss 40.995140, con 12.140227, intra 23.886024, pred 12.422218, acc 0.888780|valid loss 16.197430, con 4.619021, intra 7.159201, pred 4.419208, acc 0.837838
+  Epoch 03| train loss 41.753778, con 13.005340, intra 23.808822, pred 12.349039, acc 0.900488|valid loss 15.890881, con 4.788868, intra 6.759321, pred 4.342692, acc 0.807432
+  Epoch 04| train loss 29.027208, con 7.832736, intra 17.733020, pred 8.653632, acc 0.937561|valid loss 16.385633, con 5.450521, intra 6.708821, pred 4.226291, acc 0.847973
+  Epoch 05| train loss 32.131383, con 8.097347, intra 19.908210, pred 10.314564, acc 0.932683|valid loss 16.266834, con 5.580104, intra 6.445484, pred 4.241247, acc 0.837838
+  Epoch 06| train loss 26.040900, con 8.152446, intra 14.987131, pred 7.253307, acc 0.940488|valid loss 16.275576, con 5.744847, intra 6.243914, pred 4.286816, acc 0.824324
+  Epoch 07| train loss 21.192213, con 6.093610, intra 12.514620, pred 6.459958, acc 0.939512|valid loss 16.353580, con 5.941574, intra 6.099487, pred 4.312520, acc 0.827703
+  Epoch 08| train loss 26.987611, con 8.448068, intra 15.440412, pred 7.747830, acc 0.953171|valid loss 17.164402, con 6.723771, intra 6.134224, pred 4.306407, acc 0.827703
+  Epoch 09| train loss 24.130695, con 8.369770, intra 13.103719, pred 6.643013, acc 0.951220|valid loss 15.964815, con 5.740941, intra 5.957877, pred 4.265998, acc 0.834459
+  Epoch 10| train loss 14.362617, con 3.327669, intra 9.208896, pred 4.565130, acc 0.954146|valid loss 14.961694, con 4.988092, intra 5.698013, pred 4.275589, acc 0.837838
+  Epoch 11| train loss 17.564125, con 3.911635, intra 11.357045, pred 5.738611, acc 0.956098|valid loss 14.764275, con 4.707315, intra 5.929477, pred 4.127483, acc 0.837838
+  Epoch 12| train loss 16.318411, con 5.748455, intra 8.728639, pred 4.603290, acc 0.955122|valid loss 14.636670, con 4.745248, intra 5.721064, pred 4.170358, acc 0.831081
+  Epoch 13| train loss 17.547382, con 5.552621, intra 9.974619, pred 5.050355, acc 0.954146|valid loss 15.835316, con 5.859417, intra 5.728373, pred 4.247526, acc 0.820946
+  Epoch 14| train loss 13.983719, con 5.155479, intra 7.291581, pred 3.841645, acc 0.958049|valid loss 14.948932, con 5.236625, intra 5.581125, pred 4.131182, acc 0.837838
+  training stop in epoch 4.
+  the best model had been saved to  ./FinalModel_weibo_clu17_lClu0.2_lTri0.6.pt
+Compared_Baselines/2024_CSFND/run.py:98: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  main_model.load_state_dict(torch.load(final_saved_model_path)['state_dict'])
+===> construct multiple binary classifiers to detect fake news within each news cluster.
+--- overall fake pre 0.886792 recal 0.810345 f1 0.846847 acc 0.884746|overall real pre 0.883598 recal 0.932961 f1 0.907609 acc 0.884746|mlp       
+******************************************************************************************************************************************************
+===> final test results:
+fake precision 0.8868 recall 0.8103 f1 0.8468.
+real precision 0.8836 recall 0.9330 f1 0.9076.
+global accuracy 0.8847.
+******************************************************************************************************************************************************
+========================================================================================================================================================================================================
+===> running the 4-th time.
+seed number:  4
+===> start training at:  0718-152239
+===> process weibo data...
+    load weibo 1026  train data from files, include 409 fake and 617 real news.
+===> process weibo data...
+    load weibo 146   val data from files, include 65 fake and 81 real news.
+===> process weibo data...
+    load weibo 295   test data from files, include 116 fake and 179 real news.
+===> cluster text and image items and get the cluster pseudo-label.
+===> perform the Unsupervised context learning to get the context features.
+     load unsupervised model that trained success.
+Compared_Baselines/2024_CSFND/run.py:57: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  unsup_model.load_state_dict(torch.load(unsup_checkpoint)['state_dict'])
+===> training the main model.
+    => select the primary modality: image
+  Epoch 00| train loss 55.344911, con 14.649888, intra 32.572792, pred 20.305572, acc 0.648780|valid loss 16.890030, con 3.582417, intra 8.120772, pred 5.186839, acc 0.709459
+  Epoch 01| train loss 48.405281, con 14.128597, intra 27.954923, pred 15.804401, acc 0.814634|valid loss 16.775959, con 4.366219, intra 7.849155, pred 4.560583, acc 0.790541
+  Epoch 02| train loss 40.981056, con 10.474554, intra 24.981313, pred 13.812970, acc 0.880000|valid loss 15.565075, con 4.130921, intra 7.041425, pred 4.392730, acc 0.844595
+  Epoch 03| train loss 36.316080, con 10.826537, intra 21.029189, pred 11.150883, acc 0.903415|valid loss 16.085211, con 5.020475, intra 6.692864, pred 4.371871, acc 0.827703
+  Epoch 04| train loss 39.200137, con 11.765433, intra 22.449119, pred 12.463960, acc 0.908293|valid loss 15.409136, con 4.687778, intra 6.474532, pred 4.246825, acc 0.844595
+  Epoch 05| train loss 28.653613, con 6.716647, intra 18.220625, pred 9.290848, acc 0.924878|valid loss 16.418417, con 5.628760, intra 6.580829, pred 4.208828, acc 0.824324
+  Epoch 06| train loss 29.274807, con 9.130096, intra 16.733926, pred 8.526961, acc 0.930732|valid loss 14.781252, con 4.435788, intra 6.203375, pred 4.142087, acc 0.851351
+  Epoch 07| train loss 23.766993, con 7.055957, intra 13.729341, pred 7.454236, acc 0.929756|valid loss 14.304558, con 4.363683, intra 5.692765, pred 4.248109, acc 0.844595
+  Epoch 08| train loss 30.842742, con 7.846319, intra 19.028190, pred 9.920582, acc 0.938537|valid loss 14.908489, con 4.786880, intra 6.001503, pred 4.120105, acc 0.834459
+  Epoch 09| train loss 12.463466, con 2.576962, intra 8.174044, pred 4.281152, acc 0.943415|valid loss 14.765223, con 4.700684, intra 5.950392, pred 4.114147, acc 0.851351
+  Epoch 10| train loss 25.384521, con 7.141788, intra 15.181261, pred 7.653678, acc 0.952195|valid loss 15.648900, con 5.549756, intra 5.904811, pred 4.194335, acc 0.827703
+  Epoch 11| train loss 19.385993, con 5.529254, intra 11.625320, pred 5.578546, acc 0.958049|valid loss 16.345812, con 6.075481, intra 6.091435, pred 4.178896, acc 0.834459
+  Epoch 12| train loss 20.363372, con 6.028401, intra 12.086013, pred 5.622395, acc 0.954146|valid loss 14.853544, con 4.989239, intra 5.669363, pred 4.194943, acc 0.834459
+  Epoch 13| train loss 18.737869, con 4.285584, intra 12.026559, pred 6.064315, acc 0.958049|valid loss 14.231303, con 4.511536, intra 5.464032, pred 4.255735, acc 0.817568
+  Epoch 14| train loss 17.078180, con 4.706783, intra 10.251460, pred 5.299842, acc 0.960000|valid loss 15.560058, con 5.541829, intra 5.764072, pred 4.254155, acc 0.824324
+  Epoch 15| train loss 10.871733, con 2.815233, intra 6.678815, pred 3.444211, acc 0.961951|valid loss 15.638344, con 5.616857, intra 5.797004, pred 4.224483, acc 0.820946
+  Epoch 16| train loss 10.499636, con 2.428073, intra 6.703249, pred 3.420784, acc 0.962927|valid loss 15.603550, con 5.671504, intra 5.636355, pred 4.295691, acc 0.824324
+  Epoch 17| train loss 19.214776, con 4.929910, intra 11.945596, pred 5.848175, acc 0.969756|valid loss 15.446445, con 5.548412, intra 5.729891, pred 4.168144, acc 0.841216
+  Epoch 18| train loss 8.069440, con 1.144697, intra 5.806986, pred 2.794392, acc 0.972683|valid loss 16.805775, con 6.715874, intra 5.912753, pred 4.177149, acc 0.837838
+  Epoch 19| train loss 4.282793, con 0.583899, intra 3.150503, pred 1.370978, acc 0.980488|valid loss 17.017853, con 6.842684, intra 5.965152, pred 4.210016, acc 0.841216
+  training stop in epoch 9.
+  the best model had been saved to  ./FinalModel_weibo_clu17_lClu0.2_lTri0.6.pt
+Compared_Baselines/2024_CSFND/run.py:98: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  main_model.load_state_dict(torch.load(final_saved_model_path)['state_dict'])
+===> construct multiple binary classifiers to detect fake news within each news cluster.
+--- overall fake pre 0.904255 recal 0.732759 f1 0.809524 acc 0.864407|overall real pre 0.845771 recal 0.949721 f1 0.894737 acc 0.864407|mlp       
+******************************************************************************************************************************************************
+===> final test results:
+fake precision 0.9043 recall 0.7328 f1 0.8095.
+real precision 0.8458 recall 0.9497 f1 0.8947.
+global accuracy 0.8644.
+******************************************************************************************************************************************************
+========================================================================================================================================================================================================
+===> running the 5-th time.
+seed number:  5
+===> start training at:  0718-153352
+===> process weibo data...
+    load weibo 1026  train data from files, include 409 fake and 617 real news.
+===> process weibo data...
+    load weibo 146   val data from files, include 65 fake and 81 real news.
+===> process weibo data...
+    load weibo 295   test data from files, include 116 fake and 179 real news.
+===> cluster text and image items and get the cluster pseudo-label.
+===> perform the Unsupervised context learning to get the context features.
+     load unsupervised model that trained success.
+Compared_Baselines/2024_CSFND/run.py:57: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  unsup_model.load_state_dict(torch.load(unsup_checkpoint)['state_dict'])
+===> training the main model.
+    => select the primary modality: image
+  Epoch 00| train loss 55.575845, con 13.962684, intra 33.519932, pred 20.233069, acc 0.635122|valid loss 16.935259, con 3.354325, intra 8.331058, pred 5.249876, acc 0.682432
+  Epoch 01| train loss 49.283430, con 14.101193, intra 28.689499, pred 16.231841, acc 0.821463|valid loss 18.125942, con 5.198135, intra 8.398538, pred 4.529268, acc 0.837838
+  Epoch 02| train loss 40.410558, con 11.263080, intra 24.370757, pred 11.941801, acc 0.892683|valid loss 18.083136, con 5.627573, intra 7.908554, pred 4.547009, acc 0.834459
+  Epoch 03| train loss 41.625444, con 11.724952, intra 25.002460, pred 12.245078, acc 0.914146|valid loss 16.667000, con 4.906164, intra 7.284018, pred 4.476820, acc 0.807432
+  Epoch 04| train loss 34.012369, con 8.700757, intra 21.265095, pred 10.116292, acc 0.918049|valid loss 20.495695, con 8.612312, intra 7.569974, pred 4.313409, acc 0.800676
+  Epoch 05| train loss 29.695762, con 10.532939, intra 16.019717, pred 7.857764, acc 0.931707|valid loss 16.409657, con 5.371292, intra 6.716317, pred 4.322048, acc 0.824324
+  Epoch 06| train loss 28.209694, con 7.536404, intra 17.153701, pred 8.798971, acc 0.920976|valid loss 16.601439, con 5.747618, intra 6.532815, pred 4.321006, acc 0.834459
+  Epoch 07| train loss 27.306101, con 8.471879, intra 15.550586, pred 8.209087, acc 0.928780|valid loss 16.055943, con 5.413005, intra 6.359254, pred 4.283684, acc 0.841216
+  Epoch 08| train loss 25.716173, con 8.491333, intra 14.334820, pred 7.225049, acc 0.939512|valid loss 15.642278, con 5.395884, intra 6.041229, pred 4.205165, acc 0.837838
+  Epoch 09| train loss 20.025243, con 4.870407, intra 12.650544, pred 6.260726, acc 0.947317|valid loss 15.395953, con 5.133499, intra 6.101847, pred 4.160607, acc 0.831081
+  Epoch 10| train loss 18.057486, con 4.898479, intra 11.028807, pred 5.325501, acc 0.953171|valid loss 14.807426, con 4.693731, intra 5.923954, pred 4.189741, acc 0.831081
+  Epoch 11| train loss 16.419580, con 4.347929, intra 10.082336, pred 4.973286, acc 0.966829|valid loss 15.469536, con 5.363204, intra 5.906985, pred 4.199346, acc 0.841216
+  Epoch 12| train loss 19.231150, con 5.161717, intra 11.823129, pred 5.615760, acc 0.960976|valid loss 16.034975, con 5.978851, intra 5.805098, pred 4.251025, acc 0.817568
+  Epoch 13| train loss 19.877054, con 6.177652, intra 11.477364, pred 5.555094, acc 0.967805|valid loss 15.020781, con 5.118465, intra 5.693480, pred 4.208838, acc 0.820946
+  Epoch 14| train loss 17.456136, con 3.574534, intra 11.671040, pred 5.526404, acc 0.961951|valid loss 17.286709, con 6.995764, intra 6.103662, pred 4.187283, acc 0.831081
+  Epoch 15| train loss 17.278816, con 5.372014, intra 9.987904, pred 4.797245, acc 0.964878|valid loss 17.114756, con 7.052214, intra 5.997438, pred 4.065103, acc 0.858108
+  Epoch 16| train loss 15.595747, con 3.868223, intra 9.755343, pred 4.930453, acc 0.963902|valid loss 15.394559, con 5.494339, intra 5.888497, pred 4.011721, acc 0.861486
+  Epoch 17| train loss 8.871196, con 2.626221, intra 5.178335, pred 2.666601, acc 0.969756|valid loss 15.003147, con 5.045965, intra 5.860331, pred 4.096852, acc 0.841216
+  Epoch 18| train loss 7.740642, con 2.245952, intra 4.615964, pred 2.196812, acc 0.969756|valid loss 15.959605, con 5.936825, intra 5.796830, pred 4.225951, acc 0.827703
+  Epoch 19| train loss 4.452941, con 1.632976, intra 2.387245, pred 1.081799, acc 0.970732|valid loss 15.517286, con 5.596312, intra 5.708793, pred 4.212180, acc 0.824324
+  Epoch 20| train loss 9.572905, con 2.366218, intra 6.020312, pred 2.965936, acc 0.968780|valid loss 15.440232, con 5.630423, intra 5.604666, pred 4.205143, acc 0.834459
+  Epoch 21| train loss 11.180936, con 2.547391, intra 7.192008, pred 3.603841, acc 0.974634|valid loss 15.499672, con 5.740219, intra 5.627625, pred 4.131828, acc 0.854730
+  Epoch 22| train loss 14.650677, con 4.236061, intra 8.629675, pred 4.462353, acc 0.969756|valid loss 15.229097, con 5.460435, intra 5.568879, pred 4.199783, acc 0.844595
+  Epoch 23| train loss 13.507609, con 3.464750, intra 8.455261, pred 3.968993, acc 0.976585|valid loss 15.465090, con 5.701464, intra 5.614334, pred 4.149292, acc 0.854730
+  Epoch 24| train loss 8.703352, con 1.892587, intra 5.650735, pred 2.900073, acc 0.974634|valid loss 15.572573, con 5.808677, intra 5.625742, pred 4.138154, acc 0.854730
+  Epoch 25| train loss 5.786811, con 0.501756, intra 4.412007, pred 2.182621, acc 0.974634|valid loss 15.706747, con 5.951040, intra 5.648077, pred 4.107630, acc 0.844595
+  Epoch 26| train loss 12.683116, con 3.006292, intra 8.075213, pred 4.004027, acc 0.976585|valid loss 15.447349, con 5.678135, intra 5.605184, pred 4.164030, acc 0.851351
+  training stop in epoch 16.
+  the best model had been saved to  ./FinalModel_weibo_clu17_lClu0.2_lTri0.6.pt
+Compared_Baselines/2024_CSFND/run.py:98: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  main_model.load_state_dict(torch.load(final_saved_model_path)['state_dict'])
+===> construct multiple binary classifiers to detect fake news within each news cluster.
+--- overall fake pre 0.893204 recal 0.793103 f1 0.840183 acc 0.881356|overall real pre 0.875000 recal 0.938547 f1 0.905660 acc 0.881356|mlp       
+******************************************************************************************************************************************************
+===> final test results:
+fake precision 0.8932 recall 0.7931 f1 0.8402.
+real precision 0.8750 recall 0.9385 f1 0.9057.
+global accuracy 0.8814.
+******************************************************************************************************************************************************
+========================================================================================================================================================================================================
+===> running the 6-th time.
+seed number:  6
+===> start training at:  0718-154759
+===> process weibo data...
+    load weibo 1026  train data from files, include 409 fake and 617 real news.
+===> process weibo data...
+    load weibo 146   val data from files, include 65 fake and 81 real news.
+===> process weibo data...
+    load weibo 295   test data from files, include 116 fake and 179 real news.
+===> cluster text and image items and get the cluster pseudo-label.
+===> perform the Unsupervised context learning to get the context features.
+     load unsupervised model that trained success.
+Compared_Baselines/2024_CSFND/run.py:57: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  unsup_model.load_state_dict(torch.load(unsup_checkpoint)['state_dict'])
+===> training the main model.
+    => select the primary modality: image
+  Epoch 00| train loss 54.828741, con 13.447029, intra 33.326004, pred 20.139269, acc 0.649756|valid loss 17.391109, con 3.750634, intra 8.440597, pred 5.199879, acc 0.695946
+  Epoch 01| train loss 48.934155, con 12.884745, intra 29.517272, pred 16.330345, acc 0.802927|valid loss 16.868206, con 4.036041, intra 8.227283, pred 4.604881, acc 0.810811
+  Epoch 02| train loss 47.412130, con 12.994052, intra 28.799104, pred 14.047434, acc 0.895610|valid loss 15.849660, con 3.897485, intra 7.448063, pred 4.504112, acc 0.804054
+  Epoch 03| train loss 45.804602, con 13.599287, intra 26.946657, pred 13.146643, acc 0.902439|valid loss 17.529264, con 5.844656, intra 7.309966, pred 4.374643, acc 0.810811
+  Epoch 04| train loss 30.359098, con 8.737706, intra 17.995732, pred 9.064151, acc 0.914146|valid loss 16.324711, con 5.044179, intra 6.904949, pred 4.375582, acc 0.810811
+  Epoch 05| train loss 29.737690, con 6.804419, intra 19.057769, pred 9.688754, acc 0.937561|valid loss 14.880777, con 4.042883, intra 6.493845, pred 4.344050, acc 0.817568
+  Epoch 06| train loss 22.936661, con 5.126773, intra 14.908046, pred 7.254603, acc 0.936585|valid loss 16.104612, con 5.231754, intra 6.563711, pred 4.309148, acc 0.814189
+  Epoch 07| train loss 26.311364, con 6.752757, intra 16.307803, pred 8.127009, acc 0.927805|valid loss 16.293308, con 5.242145, intra 6.778628, pred 4.272536, acc 0.807432
+  Epoch 08| train loss 34.529838, con 10.846205, intra 19.888117, pred 9.488787, acc 0.940488|valid loss 15.951689, con 5.285604, intra 6.454273, pred 4.211813, acc 0.820946
+  Epoch 09| train loss 26.662911, con 7.625053, intra 15.966188, pred 7.679176, acc 0.955122|valid loss 16.691647, con 6.198122, intra 6.187862, pred 4.305663, acc 0.831081
+  Epoch 10| train loss 19.518051, con 3.623312, intra 13.201508, pred 6.733079, acc 0.947317|valid loss 15.945049, con 5.376539, intra 6.420757, pred 4.147753, acc 0.817568
+  Epoch 11| train loss 16.004682, con 3.834555, intra 10.199631, pred 4.926238, acc 0.959024|valid loss 15.442055, con 4.928323, intra 6.326630, pred 4.187102, acc 0.831081
+  Epoch 12| train loss 12.434128, con 2.848078, intra 8.054909, pred 3.827852, acc 0.961951|valid loss 16.337454, con 5.819672, intra 6.375567, pred 4.142215, acc 0.851351
+  Epoch 13| train loss 8.764656, con 1.983774, intra 5.708828, pred 2.680135, acc 0.967805|valid loss 15.882507, con 5.362514, intra 6.376078, pred 4.143915, acc 0.834459
+  Epoch 14| train loss 6.121622, con 1.313086, intra 4.081877, pred 1.816647, acc 0.963902|valid loss 16.103794, con 5.558155, intra 6.399695, pred 4.145945, acc 0.847973
+  Epoch 15| train loss 17.392800, con 4.802716, intra 10.634255, pred 4.889569, acc 0.953171|valid loss 18.645412, con 8.049537, intra 6.269230, pred 4.326645, acc 0.824324
+  Epoch 16| train loss 12.514316, con 2.878722, intra 8.106616, pred 3.822445, acc 0.967805|valid loss 17.282745, con 6.896365, intra 6.064602, pred 4.321779, acc 0.820946
+  Epoch 17| train loss 10.158908, con 2.853609, intra 6.157578, pred 2.869305, acc 0.968780|valid loss 14.106588, con 4.967156, intra 5.234006, pred 3.905427, acc 0.837838
+  Epoch 18| train loss 12.400622, con 3.373090, intra 7.473971, pred 3.883899, acc 0.963902|valid loss 15.474180, con 5.442624, intra 5.784572, pred 4.246984, acc 0.827703
+  Epoch 19| train loss 13.803657, con 4.076407, intra 8.084385, pred 4.107162, acc 0.971707|valid loss 16.432785, con 6.358817, intra 5.759832, pred 4.314135, acc 0.817568
+  Epoch 20| train loss 5.592572, con 1.211788, intra 3.687451, pred 1.733331, acc 0.975610|valid loss 18.135685, con 8.021874, intra 5.794649, pred 4.319160, acc 0.800676
+  Epoch 21| train loss 8.331794, con 2.122159, intra 5.221765, pred 2.469674, acc 0.975610|valid loss 18.153492, con 7.994680, intra 5.830215, pred 4.328599, acc 0.800676
+  Epoch 22| train loss 4.994098, con 1.578150, intra 2.848871, pred 1.417692, acc 0.976585|valid loss 18.189909, con 8.047427, intra 5.832802, pred 4.309679, acc 0.797297
+  training stop in epoch 12.
+  the best model had been saved to  ./FinalModel_weibo_clu17_lClu0.2_lTri0.6.pt
+Compared_Baselines/2024_CSFND/run.py:98: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  main_model.load_state_dict(torch.load(final_saved_model_path)['state_dict'])
+===> construct multiple binary classifiers to detect fake news within each news cluster.
+--- overall fake pre 0.846847 recal 0.810345 f1 0.828194 acc 0.867797|overall real pre 0.880435 recal 0.905028 f1 0.892562 acc 0.867797|mlp       
+******************************************************************************************************************************************************
+===> final test results:
+fake precision 0.8468 recall 0.8103 f1 0.8282.
+real precision 0.8804 recall 0.9050 f1 0.8926.
+global accuracy 0.8678.
+******************************************************************************************************************************************************
+========================================================================================================================================================================================================
+===> running the 7-th time.
+seed number:  7
+===> start training at:  0718-160156
+===> process weibo data...
+    load weibo 1026  train data from files, include 409 fake and 617 real news.
+===> process weibo data...
+    load weibo 146   val data from files, include 65 fake and 81 real news.
+===> process weibo data...
+    load weibo 295   test data from files, include 116 fake and 179 real news.
+===> cluster text and image items and get the cluster pseudo-label.
+===> perform the Unsupervised context learning to get the context features.
+     load unsupervised model that trained success.
+Compared_Baselines/2024_CSFND/run.py:57: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  unsup_model.load_state_dict(torch.load(unsup_checkpoint)['state_dict'])
+===> training the main model.
+    => select the primary modality: image
+  Epoch 00| train loss 55.414031, con 14.465927, intra 32.525651, pred 21.056128, acc 0.600000|valid loss 17.188122, con 3.677679, intra 7.997629, pred 5.512813, acc 0.638514
+  Epoch 01| train loss 47.772540, con 11.721101, intra 28.815680, pred 18.089395, acc 0.740488|valid loss 15.937542, con 3.508968, intra 7.685540, pred 4.743035, acc 0.810811
+  Epoch 02| train loss 34.341089, con 8.921587, intra 20.940086, pred 11.198538, acc 0.889756|valid loss 16.370310, con 4.493159, intra 7.502774, pred 4.374376, acc 0.820946
+  Epoch 03| train loss 40.771105, con 10.726009, intra 24.809228, pred 13.089667, acc 0.910244|valid loss 14.727321, con 3.657447, intra 6.755105, pred 4.314771, acc 0.844595
+  Epoch 04| train loss 34.966110, con 8.708108, intra 21.723217, pred 11.336961, acc 0.916098|valid loss 14.957355, con 4.018944, intra 6.707143, pred 4.231269, acc 0.837838
+  Epoch 05| train loss 31.540208, con 8.126537, intra 19.266901, pred 10.366923, acc 0.907317|valid loss 14.725759, con 4.116655, intra 6.318092, pred 4.291012, acc 0.824324
+  Epoch 06| train loss 38.118026, con 10.907296, intra 22.320444, pred 12.225713, acc 0.898537|valid loss 14.177660, con 4.044775, intra 5.986565, pred 4.146320, acc 0.841216
+  Epoch 07| train loss 25.779270, con 5.550586, intra 16.794992, pred 8.584228, acc 0.936585|valid loss 15.335444, con 5.133835, intra 6.084019, pred 4.117591, acc 0.861486
+  Epoch 08| train loss 23.523907, con 7.368089, intra 13.434586, pred 6.803080, acc 0.934634|valid loss 15.510639, con 5.393568, intra 5.806861, pred 4.310210, acc 0.824324
+  Epoch 09| train loss 15.160316, con 3.978202, intra 9.248287, pred 4.834567, acc 0.944390|valid loss 15.962930, con 5.764562, intra 5.862673, pred 4.335695, acc 0.820946
+  Epoch 10| train loss 22.380062, con 7.412141, intra 12.353337, pred 6.536461, acc 0.942439|valid loss 13.647765, con 4.801736, intra 4.990807, pred 3.855224, acc 0.827703
+  Epoch 11| train loss 19.232486, con 4.612249, intra 12.045317, pred 6.437298, acc 0.937561|valid loss 14.412125, con 4.789861, intra 5.345866, pred 4.276399, acc 0.827703
+  Epoch 12| train loss 18.109028, con 3.749682, intra 11.849436, pred 6.274773, acc 0.956098|valid loss 15.572640, con 5.704155, intra 5.589741, pred 4.278744, acc 0.817568
+  Epoch 13| train loss 10.289042, con 2.008473, intra 6.906061, pred 3.436269, acc 0.951220|valid loss 16.502600, con 6.411138, intra 5.907926, pred 4.183537, acc 0.841216
+  Epoch 14| train loss 15.852134, con 5.025261, intra 9.024387, pred 4.506212, acc 0.951220|valid loss 16.927654, con 6.699249, intra 6.200286, pred 4.028118, acc 0.858108
+  Epoch 15| train loss 19.765351, con 6.895466, intra 10.747729, pred 5.305388, acc 0.960976|valid loss 15.583264, con 5.703348, intra 5.778133, pred 4.101783, acc 0.844595
+  Epoch 16| train loss 15.952699, con 4.435954, intra 9.553321, pred 4.908558, acc 0.960976|valid loss 15.941040, con 6.011329, intra 5.701058, pred 4.228654, acc 0.827703
+  Epoch 17| train loss 5.217274, con 0.728831, intra 3.743678, pred 1.861914, acc 0.967805|valid loss 15.440489, con 5.583264, intra 5.630679, pred 4.226544, acc 0.831081
+  training stop in epoch 7.
+  the best model had been saved to  ./FinalModel_weibo_clu17_lClu0.2_lTri0.6.pt
+Compared_Baselines/2024_CSFND/run.py:98: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  main_model.load_state_dict(torch.load(final_saved_model_path)['state_dict'])
+===> construct multiple binary classifiers to detect fake news within each news cluster.
+--- overall fake pre 0.844828 recal 0.844828 f1 0.844828 acc 0.877966|overall real pre 0.899441 recal 0.899441 f1 0.899441 acc 0.877966|mlp       
+******************************************************************************************************************************************************
+===> final test results:
+fake precision 0.8448 recall 0.8448 f1 0.8448.
+real precision 0.8994 recall 0.8994 f1 0.8994.
+global accuracy 0.8780.
+******************************************************************************************************************************************************
+========================================================================================================================================================================================================
+===> running the 8-th time.
+seed number:  8
+===> start training at:  0718-161443
+===> process weibo data...
+    load weibo 1026  train data from files, include 409 fake and 617 real news.
+===> process weibo data...
+    load weibo 146   val data from files, include 65 fake and 81 real news.
+===> process weibo data...
+    load weibo 295   test data from files, include 116 fake and 179 real news.
+===> cluster text and image items and get the cluster pseudo-label.
+===> perform the Unsupervised context learning to get the context features.
+     load unsupervised model that trained success.
+Compared_Baselines/2024_CSFND/run.py:57: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  unsup_model.load_state_dict(torch.load(unsup_checkpoint)['state_dict'])
+===> training the main model.
+    => select the primary modality: image
+  Epoch 00| train loss 57.289435, con 15.637683, intra 33.648084, pred 20.009165, acc 0.679024|valid loss 17.313774, con 3.850767, intra 8.181540, pred 5.281466, acc 0.706081
+  Epoch 01| train loss 48.316493, con 12.636246, intra 29.359066, pred 15.802948, acc 0.840000|valid loss 17.523462, con 4.677045, intra 8.375027, pred 4.471390, acc 0.831081
+  Epoch 02| train loss 42.995506, con 12.575575, intra 25.458253, pred 12.404194, acc 0.885854|valid loss 18.441818, con 6.054392, intra 7.886670, pred 4.500756, acc 0.790541
+  Epoch 03| train loss 36.031323, con 9.759207, intra 21.820036, pred 11.130198, acc 0.912195|valid loss 16.778542, con 5.205285, intra 7.174026, pred 4.399231, acc 0.820946
+  Epoch 04| train loss 31.204761, con 8.800976, intra 18.615299, pred 9.471212, acc 0.916098|valid loss 16.680279, con 5.485101, intra 6.852274, pred 4.342903, acc 0.820946
+  Epoch 05| train loss 36.897649, con 10.629294, intra 21.938210, pred 10.825362, acc 0.921951|valid loss 16.800196, con 5.690961, intra 6.846282, pred 4.262954, acc 0.817568
+  Epoch 06| train loss 30.271485, con 9.047810, intra 17.802528, pred 8.552866, acc 0.931707|valid loss 15.465368, con 4.876198, intra 6.296181, pred 4.292990, acc 0.810811
+  Epoch 07| train loss 25.959454, con 7.900808, intra 15.028612, pred 7.575084, acc 0.936585|valid loss 15.317463, con 5.049664, intra 6.092918, pred 4.174879, acc 0.861486
+  Epoch 08| train loss 22.699134, con 6.166683, intra 13.876192, pred 6.640646, acc 0.950244|valid loss 15.315898, con 5.605273, intra 5.903383, pred 3.807241, acc 0.820946
+  Epoch 09| train loss 21.536059, con 6.116439, intra 12.953378, pred 6.165605, acc 0.958049|valid loss 15.506290, con 4.963302, intra 6.338434, pred 4.204555, acc 0.834459
+  Epoch 10| train loss 9.003539, con 1.457123, intra 6.328675, pred 3.044352, acc 0.966829|valid loss 15.193636, con 4.737092, intra 6.203720, pred 4.252823, acc 0.827703
+  Epoch 11| train loss 18.519446, con 5.143463, intra 11.281445, pred 5.236343, acc 0.959024|valid loss 15.811563, con 5.526407, intra 5.951567, pred 4.333588, acc 0.824324
+  Epoch 12| train loss 16.170202, con 4.160546, intra 9.997450, pred 5.030515, acc 0.958049|valid loss 16.328243, con 6.180014, intra 5.876729, pred 4.271500, acc 0.834459
+  Epoch 13| train loss 16.074617, con 4.979546, intra 9.332375, pred 4.406740, acc 0.964878|valid loss 15.303041, con 5.015749, intra 6.077580, pred 4.209712, acc 0.827703
+  Epoch 14| train loss 13.688756, con 3.881068, intra 8.131661, pred 4.190066, acc 0.959024|valid loss 14.623119, con 4.503602, intra 5.886680, pred 4.232836, acc 0.824324
+  Epoch 15| train loss 10.540449, con 2.006040, intra 7.201938, pred 3.331178, acc 0.966829|valid loss 14.057215, con 4.147471, intra 5.736151, pred 4.173593, acc 0.841216
+  Epoch 16| train loss 9.653860, con 1.743828, intra 6.582351, pred 3.319201, acc 0.969756|valid loss 13.515855, con 3.618921, intra 5.802062, pred 4.094872, acc 0.844595
+  Epoch 17| train loss 11.717347, con 2.611643, intra 7.613889, pred 3.729536, acc 0.966829|valid loss 16.525951, con 6.221398, intra 6.106400, pred 4.198153, acc 0.827703
+  training stop in epoch 7.
+  the best model had been saved to  ./FinalModel_weibo_clu17_lClu0.2_lTri0.6.pt
+Compared_Baselines/2024_CSFND/run.py:98: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  main_model.load_state_dict(torch.load(final_saved_model_path)['state_dict'])
+===> construct multiple binary classifiers to detect fake news within each news cluster.
+--- overall fake pre 0.858491 recal 0.784483 f1 0.819820 acc 0.864407|overall real pre 0.867725 recal 0.916201 f1 0.891304 acc 0.864407|mlp       
+******************************************************************************************************************************************************
+===> final test results:
+fake precision 0.8585 recall 0.7845 f1 0.8198.
+real precision 0.8677 recall 0.9162 f1 0.8913.
+global accuracy 0.8644.
+******************************************************************************************************************************************************
+========================================================================================================================================================================================================
+===> running the 9-th time.
+seed number:  9
+===> start training at:  0718-162842
+===> process weibo data...
+    load weibo 1026  train data from files, include 409 fake and 617 real news.
+===> process weibo data...
+    load weibo 146   val data from files, include 65 fake and 81 real news.
+===> process weibo data...
+    load weibo 295   test data from files, include 116 fake and 179 real news.
+===> cluster text and image items and get the cluster pseudo-label.
+===> perform the Unsupervised context learning to get the context features.
+     load unsupervised model that trained success.
+Compared_Baselines/2024_CSFND/run.py:57: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  unsup_model.load_state_dict(torch.load(unsup_checkpoint)['state_dict'])
+===> training the main model.
+    => select the primary modality: image
+  Epoch 00| train loss 53.989867, con 13.627713, intra 32.103349, pred 20.647008, acc 0.611707|valid loss 17.171749, con 4.003930, intra 7.910601, pred 5.257220, acc 0.712838
+  Epoch 01| train loss 48.912725, con 12.900876, intra 29.311786, pred 16.750156, acc 0.813659|valid loss 17.076672, con 4.659939, intra 7.731133, pred 4.685599, acc 0.783784
+  Epoch 02| train loss 45.618180, con 13.181663, intra 26.832115, pred 14.011004, acc 0.876098|valid loss 15.885105, con 3.971076, intra 7.524474, pred 4.389556, acc 0.827703
+  Epoch 03| train loss 36.255758, con 11.344869, intra 20.589732, pred 10.802889, acc 0.890732|valid loss 14.608728, con 3.553262, intra 6.623264, pred 4.432203, acc 0.831081
+  Epoch 04| train loss 38.543396, con 11.835560, intra 21.968670, pred 11.847913, acc 0.914146|valid loss 14.403599, con 4.007710, intra 6.144329, pred 4.251560, acc 0.834459
+  Epoch 05| train loss 32.804844, con 10.427114, intra 18.391706, pred 9.965061, acc 0.938537|valid loss 14.279513, con 4.305436, intra 5.676250, pred 4.297826, acc 0.807432
+  Epoch 06| train loss 30.237343, con 9.380972, intra 17.118156, pred 9.345536, acc 0.943415|valid loss 13.582277, con 3.771253, intra 5.563639, pred 4.247386, acc 0.831081
+  Epoch 07| train loss 25.196180, con 6.880365, intra 15.170237, pred 7.863943, acc 0.941463|valid loss 14.383339, con 4.573386, intra 5.646468, pred 4.163486, acc 0.844595
+  Epoch 08| train loss 20.971744, con 5.232014, intra 13.119259, pred 6.551176, acc 0.950244|valid loss 15.287925, con 5.319716, intra 5.834640, pred 4.133570, acc 0.834459
+  Epoch 09| train loss 17.029088, con 4.137634, intra 10.772991, pred 5.296155, acc 0.959024|valid loss 14.822218, con 4.771564, intra 5.940309, pred 4.110344, acc 0.851351
+  Epoch 10| train loss 12.409845, con 3.180311, intra 7.733363, pred 3.740426, acc 0.958049|valid loss 14.541116, con 4.697768, intra 5.827968, pred 4.015381, acc 0.847973
+  Epoch 11| train loss 14.482598, con 3.502041, intra 9.194709, pred 4.464621, acc 0.956098|valid loss 15.359405, con 5.230734, intra 6.102960, pred 4.025710, acc 0.861486
+  Epoch 12| train loss 23.356597, con 6.766043, intra 13.887506, pred 6.757619, acc 0.962927|valid loss 15.713274, con 5.811574, intra 5.606171, pred 4.295528, acc 0.820946
+  Epoch 13| train loss 20.963076, con 6.247863, intra 12.156115, pred 6.397745, acc 0.964878|valid loss 14.464878, con 4.823833, intra 5.480880, pred 4.160163, acc 0.834459
+  Epoch 14| train loss 21.468625, con 8.168556, intra 11.075885, pred 5.560459, acc 0.967805|valid loss 12.900613, con 3.671929, intra 5.140277, pred 4.088408, acc 0.858108
+  Epoch 15| train loss 12.309740, con 2.922441, intra 7.765717, pred 4.053953, acc 0.975610|valid loss 12.884283, con 3.773776, intra 5.023510, pred 4.086998, acc 0.854730
+  Epoch 16| train loss 13.289255, con 3.091954, intra 8.412239, pred 4.462652, acc 0.972683|valid loss 14.737423, con 5.119115, intra 5.458220, pred 4.160090, acc 0.824324
+  Epoch 17| train loss 8.039918, con 1.824764, intra 5.208132, pred 2.517555, acc 0.979512|valid loss 16.203726, con 6.425151, intra 5.616035, pred 4.162540, acc 0.827703
+  Epoch 18| train loss 9.385990, con 2.232312, intra 5.967663, pred 2.965039, acc 0.974634|valid loss 14.699875, con 5.046153, intra 5.549718, pred 4.104004, acc 0.837838
+  Epoch 19| train loss 12.615241, con 4.294448, intra 7.017616, pred 3.257943, acc 0.977561|valid loss 14.450626, con 4.865085, intra 5.484638, pred 4.100903, acc 0.841216
+  Epoch 20| train loss 7.202164, con 1.050530, intra 5.148919, pred 2.506790, acc 0.970732|valid loss 15.324256, con 5.613589, intra 5.560693, pred 4.149973, acc 0.844595
+  Epoch 21| train loss 12.271240, con 3.752906, intra 7.000122, pred 3.795531, acc 0.967805|valid loss 15.461887, con 5.755288, intra 5.585215, pred 4.121386, acc 0.847973
+  training stop in epoch 11.
+  the best model had been saved to  ./FinalModel_weibo_clu17_lClu0.2_lTri0.6.pt
+Compared_Baselines/2024_CSFND/run.py:98: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  main_model.load_state_dict(torch.load(final_saved_model_path)['state_dict'])
+===> construct multiple binary classifiers to detect fake news within each news cluster.
+--- overall fake pre 0.888889 recal 0.827586 f1 0.857143 acc 0.891525|overall real pre 0.893048 recal 0.932961 f1 0.912568 acc 0.891525|mlp       
+******************************************************************************************************************************************************
+===> final test results:
+fake precision 0.8889 recall 0.8276 f1 0.8571.
+real precision 0.8930 recall 0.9330 f1 0.9126.
+global accuracy 0.8915.
+******************************************************************************************************************************************************
+========================================================================================================================================================================================================
+===> running the 10-th time.
+seed number:  10
+===> start training at:  0718-164331
+===> process weibo data...
+    load weibo 1026  train data from files, include 409 fake and 617 real news.
+===> process weibo data...
+    load weibo 146   val data from files, include 65 fake and 81 real news.
+===> process weibo data...
+    load weibo 295   test data from files, include 116 fake and 179 real news.
+===> cluster text and image items and get the cluster pseudo-label.
+===> perform the Unsupervised context learning to get the context features.
+     load unsupervised model that trained success.
+Compared_Baselines/2024_CSFND/run.py:57: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  unsup_model.load_state_dict(torch.load(unsup_checkpoint)['state_dict'])
+===> training the main model.
+    => select the primary modality: image
+  Epoch 00| train loss 55.615062, con 15.473763, intra 32.574348, pred 18.917376, acc 0.707317|valid loss 18.387560, con 4.726386, intra 8.653798, pred 5.007375, acc 0.770270
+  Epoch 01| train loss 49.701783, con 13.865062, intra 29.707147, pred 15.323933, acc 0.845854|valid loss 18.565290, con 5.327711, intra 8.597103, pred 4.640479, acc 0.793919
+  Epoch 02| train loss 45.216007, con 13.390769, intra 26.694567, pred 12.826673, acc 0.886829|valid loss 18.230438, con 5.811936, intra 8.044436, pred 4.374065, acc 0.817568
+  Epoch 03| train loss 42.722424, con 14.519297, intra 23.358306, pred 12.112049, acc 0.899512|valid loss 15.841665, con 4.563792, intra 7.005507, pred 4.272367, acc 0.858108
+  Epoch 04| train loss 32.757496, con 8.769928, intra 19.828390, pred 10.397943, acc 0.920976|valid loss 16.193821, con 5.003147, intra 6.863023, pred 4.327651, acc 0.827703
+  Epoch 05| train loss 20.906222, con 5.666495, intra 12.763032, pred 6.191736, acc 0.943415|valid loss 15.998732, con 4.795950, intra 6.880233, pred 4.322548, acc 0.820946
+  Epoch 06| train loss 29.658650, con 7.893021, intra 18.148549, pred 9.042697, acc 0.934634|valid loss 15.485659, con 4.679893, intra 6.437912, pred 4.367855, acc 0.817568
+  Epoch 07| train loss 21.603712, con 4.386532, intra 14.327682, pred 7.223745, acc 0.953171|valid loss 17.299616, con 6.288027, intra 6.652376, pred 4.359212, acc 0.824324
+  Epoch 08| train loss 22.168985, con 6.755732, intra 12.803805, pred 6.523618, acc 0.939512|valid loss 15.466835, con 4.841978, intra 6.344517, pred 4.280341, acc 0.824324
+  Epoch 09| train loss 20.997306, con 5.757930, intra 12.698950, pred 6.351065, acc 0.957073|valid loss 16.095278, con 5.409671, intra 6.350388, pred 4.335218, acc 0.820946
+  Epoch 10| train loss 16.667648, con 3.480387, intra 11.072547, pred 5.286785, acc 0.960976|valid loss 15.300755, con 4.832436, intra 6.208156, pred 4.260162, acc 0.827703
+  Epoch 11| train loss 15.673850, con 4.268103, intra 9.630208, pred 4.438845, acc 0.960000|valid loss 15.934394, con 5.112653, intra 6.515020, pred 4.306722, acc 0.800676
+  Epoch 12| train loss 13.847783, con 3.222922, intra 8.940225, pred 4.211592, acc 0.957073|valid loss 17.091301, con 6.215971, intra 6.574575, pred 4.300754, acc 0.810811
+  Epoch 13| train loss 16.464367, con 4.185937, intra 10.350478, pred 4.819879, acc 0.960000|valid loss 19.343103, con 8.249983, intra 6.823635, pred 4.269486, acc 0.820946
+  training stop in epoch 3.
+  the best model had been saved to  ./FinalModel_weibo_clu17_lClu0.2_lTri0.6.pt
+Compared_Baselines/2024_CSFND/run.py:98: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  main_model.load_state_dict(torch.load(final_saved_model_path)['state_dict'])
+===> construct multiple binary classifiers to detect fake news within each news cluster.
+--- overall fake pre 0.872727 recal 0.827586 f1 0.849558 acc 0.884746|overall real pre 0.891892 recal 0.921788 f1 0.906593 acc 0.884746|mlp       
+******************************************************************************************************************************************************
+===> final test results:
+fake precision 0.8727 recall 0.8276 f1 0.8496.
+real precision 0.8919 recall 0.9218 f1 0.9066.
+global accuracy 0.8847.
+******************************************************************************************************************************************************
+========================================================================================================================================================================================================
+===> final average results after 10 times:
+fake precision 87.58% ± 1.93% | recall 80.86% ± 3.08% | f1 84.03% ± 1.56%.
+real precision 88.22% ± 1.54% | recall 92.51% ± 1.46% | f1 90.30% ± 0.78%.
+global acc 87.93% ± 1.02%.
