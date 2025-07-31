@@ -2,7 +2,7 @@ nohup: ignoring input
 {
     "seed": 114514,
     "dataset_name": "weibo",
-    "dataset_dir": "/data3/*****1_FakeNewsOnLLM/0_Datasets/2022_MFAN_PHEME_Weibo/dataset/{}/data_json/{}.json",
+    "dataset_dir": "DataModule/dataset/{}/data_json/{}.json",
     "dataset_embeddings_dir": "DataModule/data/{}_{}.pt",
     "dataset_graph_embeddings_dir": "DataModule/data/{}_{}_graph.pt",
     "dataset_raw_graph_embeddings_dir": "DataModule/data/{}_comment_tree_graph",
