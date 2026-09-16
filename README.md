@@ -1,5 +1,5 @@
 # TAFND
-This is an anonymized repository in which all information potentially revealing the authors’ identities has been deleted.
+This is the official implementation of our ICONIP 2026 accepted paper: TAFND: Time-Aware Comment Propagation Network for Multi-Modal Fake News Detection.
 
 # Data
 Due to the large size of the datasets and the extracted feature files (in .pt format), which exceed GitHub’s file size limitations, and the potential risk of violating anonymity policies by hosting them on cloud storage platforms such as Google Drive (which may expose personal information), we refrain from releasing the complete datasets at this stage. Instead, a limited set of demo files is provided for reference purposes. The full datasets will be made publicly available upon the official acceptance and publication of the paper.
